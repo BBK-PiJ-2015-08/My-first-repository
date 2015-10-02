@@ -1,17 +1,31 @@
-String h1, h2, h3, h4, h5
-String c1, c2, c3, c4, c5
+String rank1, rank2, rank3, rank4, rank5
+String suit1, suit2, suit3, suit4, suit5
 int cardNumber = 0
 boolean finished = false
 //while (!finished)
 while (!finished) {
-	println "Enter card rank (1-10, J, Q or K) and suit (spades, hearts, diamonds, clubs) in format '1hearts'."
+	println "Enter rank (1-10, J, Q or K)"
 	if (cardNumber != 5) {
 		if (card == 0) {
-			h1 = System.console().readLine()
+			rank1 = System.console().readLine()
+			println "Enter suit (spades, hearts, diamonds, clubs)."
+			suit1 = System.console().readLine()
 		} else if (card == 1) {
+			rank2 = System.console().readLine()
+			println "Enter suit (spades, hearts, diamonds, clubs)."
+			suit2 = System.console().readLine()
 		} else if (card == 2) {
+			rank3 = System.console().readLine()
+			println "Enter suit (spades, hearts, diamonds, clubs)."
+			suit3 = System.console().readLine()
 		} else if (card == 3) {
+			rank4 = System.console().readLine()
+			println "Enter suit (spades, hearts, diamonds, clubs)."
+			suit4 = System.console().readLine()
 		} else if (card == 4) {
+			rank5 = System.console().readLine()
+			println "Enter suit (spades, hearts, diamonds, clubs)."
+			suit5 = System.console().readLine()
 		}
 		cardNumber = cardNumber +1
 	} else {
@@ -19,7 +33,7 @@ while (!finished) {
 	}
 //	System.console().readLine()
 }
-if (h1.substring(0,1)<=h2.substring(0,1))
+//if (h1.substring(0,1)<=h2.substring(0,1))
 
 /** --------------------
 want to store a set of numbers

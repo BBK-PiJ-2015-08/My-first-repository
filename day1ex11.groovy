@@ -1,6 +1,7 @@
 String storage
 String rank1, rank2, rank3, rank4, rank5
 String suit1, suit2, suit3, suit4, suit5
+String order1, order2, order3, order4, order5
 String pokerHand = "Nothing"
 int cardNumber = 0
 boolean finished = false
@@ -14,6 +15,16 @@ while (!finished) {
 				storage = System.console().readLine()
 			}
 			rank1 = storage
+// Converting values 10, J, Q and K to values that will run in alphanumerical order.
+			if (rank1 == "10") {
+				rank1 = "A"
+			} else if (rank1 == "J") {
+				rank1 = "B"
+			} else if (rank1 == "Q") {
+				rank1 = "C"
+			} else if (rank1 == "K") {
+				rank1 = "D"
+			}
 			print "Enter suit (spades, hearts, diamonds, clubs): "
 			storage = System.console().readLine()
 			while (storage != "spades" && storage != "hearts" && storage != "diamonds" && storage != "clubs") {
@@ -83,8 +94,13 @@ while (!finished) {
 		finished = true
 	}
 }
+//if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2
+//this will break with 10, or Q between J and K
+//if (rank1 <= )
+
 if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 	println "All the same"
+//	if 
 }
 
 //if (h1.substring(0,1)<=h2.substring(0,1))
@@ -101,4 +117,12 @@ Pair: 2 numbers are the same
 Nothing: any other situation
 
 if(s.substring)
+How to get s.substring to place 1-10 and J,Q,K in correct order?
+10 = A
+J = B
+Q = C
+K = D
+jack
+queen
+king
 **/

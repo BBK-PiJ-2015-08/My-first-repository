@@ -94,14 +94,74 @@ while (!finished) {
 		finished = true
 	}
 }
-//if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2
-//this will break with 10, or Q between J and K
-//if (rank1 <= )
 
 if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 	println "All the same"
-//	if 
 }
+
+//if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2
+/** 
+if (rank1 <= rank2) {
+	if (rank1 <= rank3) {
+		if (rank1 <= rank4) {
+			if (rank1 <= rank5) {
+				order1 = rank1
+			} else if (rank5 <= rank1) {
+				order1 = rank5
+			}
+		}
+	}
+} 
+-------
+
+if (rank1 <= rank2 && rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
+	order1 = rank1
+	if (rank2 <= rank3 && rank2 <= rank4 && rank2 <= rank5) {
+		order2 = rank2
+		if (rank3 <= rank4 && rank3 <= rank5) {
+			order3 = rank3
+			if (rank4 <= rank5) {
+				order4 = rank4
+				order5 = rank5
+			} else if (rank5 <= rank4) {
+				order4 = rank5
+				order5 = rank4
+			}
+		} else if (rank4 <= rank3 && rank4 <= rank5) {
+			order3 = rank4
+			if (rank3 <= rank5) {
+				order4 = rank3
+				order5 = rank5
+			} else if (rank5 <= rank3) {
+				order4 = rank5
+				order5 = rank3
+			}
+		} else if (rank5 <= rank3 && rank5 <= rank4) {
+			order3 = rank5
+			if (rank3 <= rank4) {
+				order4 = rank3
+				order5 = rank4
+			} else if (rank4 <= rank3) {
+				order4 = rank4
+				order5 = rank3
+			}
+		}
+	} else if (rank3 <= rank2 && rank3 <=rank4 && rank3 <= rank5) {
+		order2 = rank3
+		if (rank2 <= rank4 && rank2 <= rank5) {
+			order3 = rank2
+			if (rank4 <= rank5) {
+				order4 = rank4
+				order5 = rank5
+			} else if (rank5 <= rank4) {
+				order4 = rank5
+				order5 = rank4
+			}
+		} else if ()
+	}
+}
+//end of Rank1 littlest loop.
+**/
 
 //if (h1.substring(0,1)<=h2.substring(0,1))
 

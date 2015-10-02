@@ -23,7 +23,7 @@ while (!finished) {
 //	System.console().readLine()
 }
 
---------------------
+/** --------------------
 want to store a set of numbers
 then write these to consecutive cards
 
@@ -43,3 +43,4 @@ Pair: 2 numbers are the same
 Nothing: any other situation
 
 if(s.substring)
+**/

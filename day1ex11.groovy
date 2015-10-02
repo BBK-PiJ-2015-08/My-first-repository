@@ -6,23 +6,23 @@ boolean finished = false
 while (!finished) {
 	println "Enter rank (1-10, J, Q or K)"
 	if (cardNumber != 5) {
-		if (card == 0) {
+		if (cardNumber == 0) {
 			rank1 = System.console().readLine()
 			println "Enter suit (spades, hearts, diamonds, clubs)."
 			suit1 = System.console().readLine()
-		} else if (card == 1) {
+		} else if (cardNumber == 1) {
 			rank2 = System.console().readLine()
 			println "Enter suit (spades, hearts, diamonds, clubs)."
 			suit2 = System.console().readLine()
-		} else if (card == 2) {
+		} else if (cardNumber == 2) {
 			rank3 = System.console().readLine()
 			println "Enter suit (spades, hearts, diamonds, clubs)."
 			suit3 = System.console().readLine()
-		} else if (card == 3) {
+		} else if (cardNumber == 3) {
 			rank4 = System.console().readLine()
 			println "Enter suit (spades, hearts, diamonds, clubs)."
 			suit4 = System.console().readLine()
-		} else if (card == 4) {
+		} else if (cardNumber == 4) {
 			rank5 = System.console().readLine()
 			println "Enter suit (spades, hearts, diamonds, clubs)."
 			suit5 = System.console().readLine()

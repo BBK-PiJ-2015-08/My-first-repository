@@ -9,7 +9,5 @@ for (i=2; i<1001; i++) {
 	}
 	if (result == true) {
 	println i + " is a prime number."
-	} else {
-		println i + " is not a prime number."
 	}
 }

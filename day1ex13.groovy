@@ -1,4 +1,4 @@
-for (i=2; i<10; i++) {
+for (i=2; i<1001; i++) {
 	boolean result = true
 	int j = i-1
 	while (j>1) {

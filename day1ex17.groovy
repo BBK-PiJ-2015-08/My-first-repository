@@ -1,9 +1,10 @@
-int userInput = 0
-int dividedBy
 print "Enter a number: "
 String str = System.console().readLine()
-userInput = Integer.parseInt(str)
-
+int userInput = Integer.parseInt(str)
+int dividedBy = userInput - 1
+while (dividedBy>1) {
+	if ()
+}
 if (++)
 
 if ((upper - userInput) = (lower - userInput)) {

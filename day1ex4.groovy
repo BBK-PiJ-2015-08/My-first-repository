@@ -1,14 +1,16 @@
-> Use Boolean
-
-String result = "is"
+boolean result = true
 println "Enter a number"
 String str = System.console().readLine()
 int i = Integer.parseInt(str)
 int j = i-1
 while (j>1) {
 	if (i%j == 0) {
-		result = "is not"
+		result = false
 	}
 	j--
 }
-println "Your number " + result + " a prime number."
+if (result) {
+	println "Your number, " + i + ", is a prime number."
+} else {
+	println "Your number, " + i + ", is not a prime number."
+}

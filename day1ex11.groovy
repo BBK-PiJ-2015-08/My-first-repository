@@ -119,8 +119,6 @@ else if (matchingA >= 2)
 else if ((order1+1) == order2 && (order2+1) == order3 (order3+1) == order4 (order4+1) == order5) {
 	pokerHand = "Straight"
 }
-else if ()
-
 
 println "You got " + pokerHand
 //if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2

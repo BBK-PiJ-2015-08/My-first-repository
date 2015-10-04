@@ -86,7 +86,8 @@ if (rank1 <= rank2 && rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
 				order5 = rank3 //n17
 			}
 		}
-	} else if (rank3 <= rank2 && rank3 <= rank4 && rank3 <= rank5) {
+	}
+	else if (rank3 <= rank2 && rank3 <= rank4 && rank3 <= rank5) {
 		order2 = rank3
 		if (rank2 <= rank4 && rank2 <= rank5) {
 			order3 = rank2 //n18
@@ -99,14 +100,215 @@ if (rank1 <= rank2 && rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
 				order4 = rank4 //n22
 			}
 		}
+		else if (rank4 <= rank2 && rank4 <= rank5) {
+			order3 = rank4 //n23
+			if (rank2 <= rank5) {
+				order4 = rank2 //n24
+				order5 = rank5 //n25
+			}
+			else {
+				order4 = rank5 //n26
+				order5 = rank2 //n27
+			}
+		}
 	} else if (rank4 <= rank2 && rank4 <= rank3 && rank4 <= rank5) {
-		order2 = rank4
+		order2 = rank4 //n28
+		if (rank2 <= rank3 && rank2 <= rank5) {
+			order3 = rank2 //n29
+			if (rank3 <= rank5) {
+				order4 = rank3 //n30
+				order5 = rank5 //n31
+			}
+			else {
+				order4 = rank5 //n32
+				order5 = rank3 //n33
+			}
+		}
+		else if (rank3 <= rank2 && rank3 <= rank5) {
+			order3 = rank3 //n34
+			if (rank2 <= rank5) {
+				order4 = rank2 //n35
+				order5 = rank5 //n36
+			}
+			else {
+				order4 = rank5 //n37
+				order5 = rank2 //n38
+			}
+		}
+		else if (rank5 <= rank2 && rank5 <= rank3) {
+			order3 = rank5 //n39
+			if (rank2 <= rank3) {
+				order4 = rank2 //n40
+				order5 = rank3 //n41
+			}
+			else {
+				order4 = rank3 //n42
+				order5 = rank2 //n43
+			}
+		}
 	} else if (rank5 <= rank2 && rank5 <= rank3 && rank5 <= rank4) {
-		order2 = rank5
+		order2 = rank5 //n44
+		if (rank2 <= rank3 && rank2 <= rank4) {
+			order3 = rank2 //n45
+			if (rank3 <= rank4) {
+				order4 = rank3 //n46
+				order5 = rank4 //n47
+			}
+			else {
+				order4 = rank4 //n48
+				order5 = rank3 //n49
+			}
+		}
 	}
 }
 // else if (rank2 is lowest)
-
+else if (rank2 <= rank1 && rank2 <= rank3 && rank2 <= rank4 && rank2 <= rank5) {
+	order1 = rank2 //n50
+	if (rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
+		order2 = rank1 //n51
+		if (rank3 <= rank4 && rank3 <= rank5) {
+			order3 = rank3 //n52
+			if (rank4 <= rank5) {
+				order4 = rank4 //n52
+				order5 = rank5 //n53
+			}
+			else {
+				order4 = rank5 //n54
+				order5 = rank4 //n55
+			}
+		}
+		else if (rank4 <= rank3 && rank4 <= rank5) {
+			order3 = rank4 //n56
+			if (rank3 <= rank5) {
+				order4 = rank3 //n57
+				order5 = rank5 //n58
+			}
+			else {
+				order4 = rank5 //n59
+				order5 = rank3 //n60
+			}
+		}
+		else if (rank5 <= rank3 && rank5 <= rank4) {
+			order3 = rank5 //n61
+			if (rank3 <= rank4) {
+				order4 = rank3 //n62
+				order5 = rank4 //n63
+			}
+			else {
+				order4 = rank4 //n64
+				order5 = rank5 //n65
+			}
+		}
+	}
+	else if (rank3 <= rank1 && rank3 <= rank4 && rank3 <= rank5) {
+		order2 = rank3 //n66
+		if (rank1 <= rank4 && rank1 <= rank5) {
+			order3 = rank1 //n67
+			if (rank4 <= rank5) {
+				order4 = rank4 //n68
+				order5 = rank5 //n69
+			}
+			else {
+				order4 = rank5 //n70
+				order5 = rank4 //n71
+			}
+		}
+		else if (rank4 <= rank1 && rank4 <= rank5) {
+			order3 = rank4 //n72
+			if (rank1 <= rank5) {
+				order4 = rank1 //n73
+				order5 = rank5 //n74
+			}
+			else {
+				order4 = rank5 //n75
+				order5 = rank1 //n76
+			}
+		}
+		else if (rank5 <= rank1 && rank5 <= rank4) {
+			order3 = rank5 //n77
+			if (rank1 <= rank4) {
+				order4 = rank1 //n78
+				order5 = rank4 //n79
+			}
+			else {
+				order4 = rank4 //n80
+				order5 = rank1 //n81
+			}
+		}
+	}
+	else if (rank4 <= rank1 && rank4 <= rank3 && rank4 <= rank5) {
+		order2 = rank4 //n82
+		if (rank1 <= rank3 && rank1 <= rank5) {
+			order3 = rank1
+			if (rank3 <= rank5) {
+				order4 = rank3 //n83
+				order5 = rank5 //n84
+			}
+			else {
+				order4 = rank5 //n85
+				order5 = rank3 //n86
+			}
+		}
+		else if (rank3 <= rank1 && rank3 <= rank5) {
+			order3 = rank3 //n87
+			if (rank1 <= rank5) {
+				order4 = rank1 //n88
+				order5 = rank5 //n89
+			}
+			else {
+				order4 = rank5 //n90
+				order5 = rank1 //n91
+			}
+		}
+		else if (rank5 <= rank1 && rank5 <= rank3) {
+			order3 = rank5 //n92
+			if (rank1 <= rank3) {
+				order4 = rank1 //n93
+				order5 = rank3 //n94
+			}
+			else {
+				order4 = rank3 //n95
+				order5 = rank1 //n96
+			}
+		}
+	}
+	else if (rank5 <=rank1 && rank5 <= rank3 && rank5 <= rank4) {
+		order2 = rank5 // n97
+		if (rank1 <= rank3 && rank1 <= rank4) {
+			order3 = rank1
+			if (rank3 <= rank4) {
+				order4 = rank3
+				order5 = rank4
+			}
+			else {
+				order4 = rank4
+				order5 = rank3
+			}
+		}
+		else if (rank3 <= rank1 && rank3 <= rank4) {
+			order3 = rank3
+			if (rank1 <= rank4) {
+				order4 = rank1
+				order5 = rank4
+			}
+			else {
+				order4 = rank4
+				order5 = rank1
+			}
+		}
+		else if (rank4 <= rank1 && rank4 <= rank3) {
+			order3 = rank4
+			if (rank1 <= rank3) {
+				order4 = rank1
+				order5 = rank3
+			}
+			else {
+				order4 = rank3
+				order5 = rank1
+			}
+		}
+	}
+}
 
 // else if (rank3 is lowest)
 

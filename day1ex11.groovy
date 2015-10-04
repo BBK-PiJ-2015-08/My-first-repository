@@ -698,10 +698,6 @@ if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 		pokerHand = "a Flush"
 	}
 }
-else if (matchingA >= 4) {
-	pokerHand = "Poker"
-//If 4 cards of same suit entered, result would be Flush, but this will change it to higher ranking "Poker"
-}
 else if (matchingA >= 2)
 {
 	int matchingB = 0
@@ -725,6 +721,15 @@ else if (matchingA >= 2)
 		matchingB = 2
 	} else if (order4 == order5 && order4 != order1 && order4 != order2 && order4 != order3) {
 		matchingB = 2
+	}
+	else if (matchingA >= 4) {
+		if (matchingB == 2) {
+			pokerHand == "Three of a kind"
+		}
+		else {
+			pokerHand = "Poker"
+		}
+//If 4 cards of same suit entered, result would be Flush, but this will change it to higher ranking "Poker"
 	}
 	if (matchingA == 3 ) {
 		pokerHand = "Three of a kind"

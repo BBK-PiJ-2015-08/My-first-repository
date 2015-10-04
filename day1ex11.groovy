@@ -59,25 +59,69 @@ if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 		pokerHand = "a Flush"
 	}
 }
-int matching4 = 0
+int matchingA = 0
 if (order1 == order2) {
-	matching4++
+	matchingA++
 }
 if (order2 == order3) {
-	matching4++
+	matchingA++
 }
 if (order3 == order4) {
-	matching4++
+	matchingA++
 }
 if (order4 == order5) {
-	matching4++
+	matchingA++
 }
 if (order5 == order1) {
-	matching4++
+	matchingA++
 }
-else if (matching4 >= 4) {
+else if (matchingA >= 4) {
 	pokerHand = "Poker"
+// If player entered 4 cards of same suit, this would have been set to a Flush, but this will change it to the higher ranking "Poker".
 }
+else if (matchingA >= 2)
+{
+	int matchingB = 0
+	if (order1 == order2 && order1 != order3 && order1 != order4 && order1 != order5) {
+		matchingB = 2
+	} else if (order1 == order3 && order1 != order2 && order1 != order4 && order1 != order5) {
+		matchingB = 2
+	} else if (order1 == order4 && order1 != order2 && order1 != order3 && order1 != order5) {
+		matchingB = 2
+	} else if (order1 == order5 && order1 != order2 && order1 != order3 && order1 != order4) {
+		matchingB = 2
+	} else if (order2 == order3 && order2 != order1 && order2 != order4 && order2 != order5) {
+		matchingB = 2
+	} else if (order2 == order4 && order2 != order1 && order2 != order2 && order2 != order3) {
+		matchingB = 2
+	} else if (order2 == order5 && order2 != order1 && order2 != order3 && order2 != order4) {
+		matchingB = 2
+	} else if (order3 == order4 && order3 != order1 && order3 != order2 && order3 != order5) {
+		matchingB = 2
+	} else if (order3 == order5 && order3 != order1 && order3 != order2 && order3 != order4) {
+		matchingB = 2
+	} else if (order4 == order5 && order4 != order1 && order4 != order2 && order4 != order3) {
+		matchingB = 2
+	}
+	if (matchingA == 3 ) {
+		pokerHand = "Three of a kind"
+		if (matchingB == 2) {
+			pokerHand == "Full house"
+		}
+	}
+	else if (matchingA == 2 && matchingB == 2) {
+		pokerHand == "Two pairs"
+	}
+	else if (matchingA == 2 ^ matchingB ^ 2) {
+		pokerHand == "Pair"
+	}
+}
+else if ((order1+1) == order2 && (order2+1) == order3 (order3+1) == order4 (order4+1) == order5) {
+	pokerHand = "Straight"
+}
+else if ()
+
+
 println "You got " + pokerHand
 //if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2
 /** 
@@ -146,23 +190,12 @@ if (rank1 <= rank2 && rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
 //if (h1.substring(0,1)<=h2.substring(0,1))
 
 /** ---------------
->> Straight flush: 1-5,2-6,3-7,4-8,5-9,6-10,7-J,8-Q,9-K & all same suit
+Straight flush: 1-5,2-6,3-7,4-8,5-9,6-10,7-J,8-Q,9-K & all same suit
 Poker: 4 numbers are the same & any suit
->> Flush: Any numbers & all same suit
+Flush: Any numbers & all same suit
 Full house: 3 numbers are the same, 2 numbers the same
 Straight: 1-5,2-6,3-7,4-8,5-9,6-10,7-J,8-Q,9-K & any suit
 Three of a kind: 3 numbers are the same
 Two pairs: 2 numbers are same & 2 other numbers the same
 Pair: 2 numbers are the same
 Nothing: any other situation
-
-if(s.substring)
-How to get s.substring to place 1-10 and J,Q,K in correct order?
-10 = A
-J = B
-Q = C
-K = D
-jack
-queen
-king
-**/

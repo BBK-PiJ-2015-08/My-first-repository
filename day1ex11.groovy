@@ -275,18 +275,104 @@ else if (rank2 <= rank1 && rank2 <= rank3 && rank2 <= rank4 && rank2 <= rank5) {
 	else if (rank5 <=rank1 && rank5 <= rank3 && rank5 <= rank4) {
 		order2 = rank5 // n97
 		if (rank1 <= rank3 && rank1 <= rank4) {
-			order3 = rank1
+			order3 = rank1 //n98
 			if (rank3 <= rank4) {
-				order4 = rank3
+				order4 = rank3 //n99
+				order5 = rank4 //n100
+			}
+			else {
+				order4 = rank4 //n101
+				order5 = rank3 //n102
+			}
+		}
+		else if (rank3 <= rank1 && rank3 <= rank4) {
+			order3 = rank3 //n103
+			if (rank1 <= rank4) {
+				order4 = rank1 //n104
+				order5 = rank4 //n105
+			}
+			else {
+				order4 = rank4 //n106
+				order5 = rank1 //n107
+			}
+		}
+		else if (rank4 <= rank1 && rank4 <= rank3) {
+			order3 = rank4 //n108
+			if (rank1 <= rank3) {
+				order4 = rank1 //n109
+				order5 = rank3 //n110
+			}
+			else {
+				order4 = rank3 //n111
+				order5 = rank1 //n112
+			}
+		}
+	}
+}
+else if (rank3 <= rank1 && rank3 <= rank2 && rank3 <= rank4 && rank3 <= rank5) {
+	order1 = rank3
+	if (rank1 <= rank2 && rank1 <= rank4 && rank1 <= rank5) {
+		order2 = rank1
+		if (rank2 <= rank4 && rank2 <= rank5) {
+			order3 = rank2
+			if (rank4 <= rank5) {
+				order4 = rank4
+				order5 = rank5
+			}
+			else {
+				order4 = rank5
+				order5 = rank4
+			}
+		}
+		else if (rank4 <= rank2 && rank4 <= rank5) {
+			order3 = rank4
+			if (rank2 <= rank5) {
+				order4 = rank2
+				order5 = rank5
+			}
+			else {
+				order4 = rank5
+				order5 = rank2
+			}
+		}
+		else if (rank5 <= rank2 && rank5 <= rank4) {
+			order3 = rank5
+			if (rank2 <= rank4) {
+				order4 = rank2
 				order5 = rank4
 			}
 			else {
 				order4 = rank4
-				order5 = rank3
+				order5 = rank2
 			}
 		}
-		else if (rank3 <= rank1 && rank3 <= rank4) {
-			order3 = rank3
+	}
+	else if (rank2 <= rank1 && rank2 <= rank4 && rank2 <= rank5) {
+		order2 = rank2
+		if (rank1 <= rank4 && rank1 <= rank5) {
+			order3 = rank1
+			if (rank4 <= rank5) {
+				order4 = rank4
+				order5 = rank5
+			}
+			else {
+				order4 = rank5
+				order5 = rank4
+			}
+		}
+		else if (rank4 <= rank1 && rank4 <= rank5) {
+			order3 = rank4
+			if (rank1 <= rank5) {
+				order4 = rank1
+				order5 = rank5
+			}
+			else {
+				order4 = rank5
+				order5 = rank1
+			}
+		}
+		else if (rank5 <= rank1 && rank5 <= rank4) {
+			order3 = rank5
 			if (rank1 <= rank4) {
 				order4 = rank1
 				order5 = rank4
@@ -296,25 +382,39 @@ else if (rank2 <= rank1 && rank2 <= rank3 && rank2 <= rank4 && rank2 <= rank5) {
 				order5 = rank1
 			}
 		}
-		else if (rank4 <= rank1 && rank4 <= rank3) {
-			order3 = rank4
-			if (rank1 <= rank3) {
-				order4 = rank1
-				order5 = rank3
+	}
+	else if (rank4 <= rank1 && rank4 <= rank2 && rank4 <= rank5) {
+		order2 = rank4
+		if (rank1 <= rank2 && rank1 <= rank5) {
+			order3 = rank1
+			if (rank2 <= rank5) {
+				order4 = rank2
+				order5 = rank5
 			}
 			else {
-				order4 = rank3
-				order5 = rank1
+				order4 = rank5
+				order5 = rank2
 			}
 		}
+		else if (rank2 <= rank1 && rank2 <= rank5) {
+			order3 = rank2
+			if 
+		}
+		else if (rank5)
+	}
+	else if (rank5 <= rank1 && rank5 <= rank2 && rank5 <= rank4) {
+		order2 = rank5
+		if (rank1)
+		else if (rank2)
+		else if (rank4)
 	}
 }
-
-// else if (rank3 is lowest)
 
 // else if (rank4 is lowest)
 
 // else if (rank5 is lowest)
+
+
 if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 	if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
 		pokerHand = "a Straight Flush"

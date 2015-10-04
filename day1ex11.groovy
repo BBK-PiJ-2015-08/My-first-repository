@@ -743,12 +743,12 @@ else if (matchingA > 2)
 			pokerHand = "Full house"
 		}
 	}
-	else if (matchingA == 2 && matchingB == 2) {
-		pokerHand = "Two pairs"
-	}
-	else if (matchingA == 2 ^ matchingB == 2) {
-		pokerHand = "Pair"
-	}
+}
+else if (matchingA == 2 && matchingB == 2) {
+	pokerHand = "Two pairs"
+}
+else if (matchingA == 2 ^ matchingB == 2) {
+	pokerHand = "a Pair"
 }
 else if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
 	pokerHand = "Straight"

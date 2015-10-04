@@ -691,6 +691,29 @@ if (order3 == order5) {
 if (order4 == order5) {
 	matchingA++
 }
+// code to count if there are 2 matching \/
+int matchingB = 0
+if (order1 == order2 && order1 != order3 && order1 != order4 && order1 != order5) {
+	matchingB = 2
+} else if (order1 == order3 && order1 != order2 && order1 != order4 && order1 != order5) {
+	matchingB = 2
+} else if (order1 == order4 && order1 != order2 && order1 != order3 && order1 != order5) {
+	matchingB = 2
+} else if (order1 == order5 && order1 != order2 && order1 != order3 && order1 != order4) {
+	matchingB = 2
+} else if (order2 == order3 && order2 != order1 && order2 != order4 && order2 != order5) {
+	matchingB = 2
+} else if (order2 == order4 && order2 != order1 && order2 != order2 && order2 != order3) {
+	matchingB = 2
+} else if (order2 == order5 && order2 != order1 && order2 != order3 && order2 != order4) {
+	matchingB = 2
+} else if (order3 == order4 && order3 != order1 && order3 != order2 && order3 != order5) {
+	matchingB = 2
+} else if (order3 == order5 && order3 != order1 && order3 != order2 && order3 != order4) {
+	matchingB = 2
+} else if (order4 == order5 && order4 != order1 && order4 != order2 && order4 != order3) {
+	matchingB = 2
+}
 if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 	if (order1+1 == order2 && order2+1 == order3 && order3+1 == order4 && order4+1 == order5) {
 		pokerHand = "a Straight Flush"
@@ -698,50 +721,33 @@ if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 		pokerHand = "a Flush"
 	}
 }
-else if (matchingA >= 2)
+else if (matchingA > 2)
 {
-	int matchingB = 0
-	if (order1 == order2 && order1 != order3 && order1 != order4 && order1 != order5) {
-		matchingB = 2
-	} else if (order1 == order3 && order1 != order2 && order1 != order4 && order1 != order5) {
-		matchingB = 2
-	} else if (order1 == order4 && order1 != order2 && order1 != order3 && order1 != order5) {
-		matchingB = 2
-	} else if (order1 == order5 && order1 != order2 && order1 != order3 && order1 != order4) {
-		matchingB = 2
-	} else if (order2 == order3 && order2 != order1 && order2 != order4 && order2 != order5) {
-		matchingB = 2
-	} else if (order2 == order4 && order2 != order1 && order2 != order2 && order2 != order3) {
-		matchingB = 2
-	} else if (order2 == order5 && order2 != order1 && order2 != order3 && order2 != order4) {
-		matchingB = 2
-	} else if (order3 == order4 && order3 != order1 && order3 != order2 && order3 != order5) {
-		matchingB = 2
-	} else if (order3 == order5 && order3 != order1 && order3 != order2 && order3 != order4) {
-		matchingB = 2
-	} else if (order4 == order5 && order4 != order1 && order4 != order2 && order4 != order3) {
-		matchingB = 2
-	}
-	else if (matchingA >= 4) {
+	if (matchingA >= 4) {
 		if (matchingB == 2) {
-			pokerHand == "Three of a kind"
+			pokerHand = "Full house"
 		}
 		else {
 			pokerHand = "Poker"
 		}
-//If 4 cards of same suit entered, result would be Flush, but this will change it to higher ranking "Poker"
 	}
-	if (matchingA == 3 ) {
+//If 4 cards of same suit entered, result would be Flush, but the above will change it to higher ranking "Poker"
+	if (matchingA == 3) {
 		pokerHand = "Three of a kind"
 		if (matchingB == 2) {
-			pokerHand == "Full house"
+			pokerHand = "Full house"
 		}
 	}
-	else if (matchingA == 2 && matchingB == 2) {
-		pokerHand == "Two pairs"
+	if (matchingB == 2 && matchingA != 2) {
+		if (matchingA == 3) {
+			pokerHand = "Full house"
+		}
+		else if (matchingA == 2) {
+			pokerHand = "Two pairs"
+		}
 	}
-	else if (matchingA == 2 ^ matchingB ^ 2) {
-		pokerHand == "Pair"
+	else if (matchingA == 2 ^ matchingB == 2) {
+		pokerHand = "Pair"
 	}
 }
 else if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {

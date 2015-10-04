@@ -59,27 +59,25 @@ if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 		pokerHand = "a Flush"
 	}
 }
-else {
-	int matching4 = 0
-	if (order1 == order2) {
-		matching4++
-	}
-	if (order2 == order3) {
-		matching4++
-	}
-	if (order3 == order4) {
-		matching4++
-	}
-	if (order4 == order5) {
-		matching4++
-	}
-	if (order5 == order1) {
-		matching4++
-	}
-	if (matching4 >= 4) {
-		pokerHand = "Poker"
-	}
- }
+int matching4 = 0
+if (order1 == order2) {
+	matching4++
+}
+if (order2 == order3) {
+	matching4++
+}
+if (order3 == order4) {
+	matching4++
+}
+if (order4 == order5) {
+	matching4++
+}
+if (order5 == order1) {
+	matching4++
+}
+else if (matching4 >= 4) {
+	pokerHand = "Poker"
+}
 println "You got " + pokerHand
 //if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2
 /** 

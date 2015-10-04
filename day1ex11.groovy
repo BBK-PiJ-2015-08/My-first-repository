@@ -1,4 +1,4 @@
-String storage
+String storeRank, storeSuit
 int rank1, rank2, rank3, rank4, rank5
 String suit1, suit2, suit3, suit4, suit5
 String order1, order2, order3, order4, order5
@@ -8,84 +8,40 @@ boolean finished = false
 while (!finished) {
 	if (cardNumber != 5) {
 		print "Enter rank (1-10, J, Q or K): "
-		if (cardNumber == 0) {
-			storage = System.console().readLine()
-			while (storage != "1" && storage != "2" && storage != "3" && storage != "4" && storage != "5" && storage != "6" && storage != "7" && storage != "8" && storage != "9" && storage != "10" && storage != "J" && storage != "Q" && storage != "K") {
+		storeRank = System.console().readLine()
+			while (storeRank != "1" && storeRank != "2" && storeRank != "3" && storeRank != "4" && storeRank != "5" && storage != "6" && storage != "7" && storage != "8" && storage != "9" && storage != "10" && storage != "J" && storage != "Q" && storage != "K") {
 				print "Not a valid rank, try again: "
-				storage = System.console().readLine()
+				storeRank = System.console().readLine()
 			}
 // Converting values J, Q and K to values that will run in numerical order.
-			if (storage == "J") {
-				storage = "11"
-			} else if (storage == "Q") {
-				storage = "12"
-			} else if (storage == "K") {
-				storage = "13"
+			if (storeRank == "J") {
+				storeRank = "11"
+			} else if (storeRank == "Q") {
+				storeRank = "12"
+			} else if (storeRank == "K") {
+				storeRank = "13"
 			}
-			rank1 = Integer.parseInt(storage)
 			print "Enter suit (spades, hearts, diamonds, clubs): "
-			storage = System.console().readLine()
-			while (storage != "spades" && storage != "hearts" && storage != "diamonds" && storage != "clubs") {
+			storeSuit = System.console().readLine()
+			while (storeSuit != "spades" && storeSuit != "hearts" && storeSuit != "diamonds" && storeSuit != "clubs") {
 				print "Not a valid suit, try again: "
-				storage = System.console().readLine()
+				storeSuit = System.console().readLine()
 			}
-			suit1 = storage
+		if (cardNumber == 0) {
+			rank1 = Integer.parseInt(storeRank)
+			suit1 = storeSuit
 		} else if (cardNumber == 1) {
-			storage = System.console().readLine()
-			while (storage != "1" && storage != "2" && storage != "3" && storage != "4" && storage != "5" && storage != "6" && storage != "7" && storage != "8" && storage != "9" && storage != "10" && storage != "J" && storage != "Q" && storage != "K") {
-				print "Not a valid rank, try again: "
-				storage = System.console().readLine()
-			}
-			rank2 = storage
-			print "Enter suit (spades, hearts, diamonds, clubs): "
-			storage = System.console().readLine()
-			while (storage != "spades" && storage != "hearts" && storage != "diamonds" && storage != "clubs") {
-				print "Not a valid suit, try again: "
-				storage = System.console().readLine()
-			}
-			suit2 = storage
+			rank2 = Integer.parseInt(storeRank)
+			suit2 = storeSuit
 		} else if (cardNumber == 2) {
-			storage = System.console().readLine()
-			while (storage != "1" && storage != "2" && storage != "3" && storage != "4" && storage != "5" && storage != "6" && storage != "7" && storage != "8" && storage != "9" && storage != "10" && storage != "J" && storage != "Q" && storage != "K") {
-				print "Not a valid rank, try again: "
-				storage = System.console().readLine()
-			}
-			rank3 = storage
-			print "Enter suit (spades, hearts, diamonds, clubs): "
-			storage = System.console().readLine()
-			while (storage != "spades" && storage != "hearts" && storage != "diamonds" && storage != "clubs") {
-				print "Not a valid suit, try again: "
-				storage = System.console().readLine()
-			}
-			suit3 = storage
+			rank3 = Integer.parseInt(storeRank)
+			suit3 = storeSuit
 		} else if (cardNumber == 3) {
-			storage = System.console().readLine()
-			while (storage != "1" && storage != "2" && storage != "3" && storage != "4" && storage != "5" && storage != "6" && storage != "7" && storage != "8" && storage != "9" && storage != "10" && storage != "J" && storage != "Q" && storage != "K") {
-				print "Not a valid rank, try again: "
-				storage = System.console().readLine()
-			}
-			rank4 = storage
-			print "Enter suit (spades, hearts, diamonds, clubs): "
-			storage = System.console().readLine()
-			while (storage != "spades" && storage != "hearts" && storage != "diamonds" && storage != "clubs") {
-				print "Not a valid suit, try again: "
-				storage = System.console().readLine()
-			}
-			suit4 = storage
+			rank4 = Integer.parseInt(storeRank)
+			suit4 = storeSuit
 		} else if (cardNumber == 4) {
-			storage = System.console().readLine()
-			while (storage != "1" && storage != "2" && storage != "3" && storage != "4" && storage != "5" && storage != "6" && storage != "7" && storage != "8" && storage != "9" && storage != "10" && storage != "J" && storage != "Q" && storage != "K") {
-				print "Not a valid rank, try again: "
-				storage = System.console().readLine()
-			}
-			rank5 = storage
-			print "Enter suit (spades, hearts, diamonds, clubs): "
-			storage = System.console().readLine()
-			while (storage != "spades" && storage != "hearts" && storage != "diamonds" && storage != "clubs") {
-				print "Not a valid suit, try again: "
-				storage = System.console().readLine()
-			}
-			suit5 = storage
+			rank5 = Integer.parseInt(storeRank)
+			suit5 = storeSuit
 		}
 		cardNumber = cardNumber +1
 	} else {

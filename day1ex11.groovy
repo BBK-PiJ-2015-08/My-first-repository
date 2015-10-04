@@ -660,13 +660,6 @@ else if (rank5 <= rank1 && rank5 <= rank2 && rank5 <= rank3 && rank5 <= rank4) {
 		}
 	}
 }
-if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
-	if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
-		pokerHand = "a Straight Flush"
-	} else {
-		pokerHand = "a Flush"
-	}
-}
 int matchingA = 0
 if (order1 == order2) {
 	matchingA++
@@ -697,6 +690,13 @@ if (order3 == order5) {
 }
 if (order4 == order5) {
 	matchingA++
+}
+if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
+	if (order1+1 == order2 && order2+1 == order3 && order3+1 == order4 && order4+1 == order5) {
+		pokerHand = "a Straight Flush"
+	} else {
+		pokerHand = "a Flush"
+	}
 }
 else if (matchingA >= 4) {
 	pokerHand = "Poker"

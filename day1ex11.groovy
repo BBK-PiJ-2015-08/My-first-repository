@@ -9,7 +9,7 @@ while (!finished) {
 	if (cardNumber != 5) {
 		print "Enter rank (1-10, J, Q or K): "
 		storeRank = System.console().readLine()
-			while (storeRank != "1" && storeRank != "2" && storeRank != "3" && storeRank != "4" && storeRank != "5" && storage != "6" && storage != "7" && storage != "8" && storage != "9" && storage != "10" && storage != "J" && storage != "Q" && storage != "K") {
+			while (storeRank != "1" && storeRank != "2" && storeRank != "3" && storeRank != "4" && storeRank != "5" && storeRank != "6" && storeRank != "7" && storeRank != "8" && storeRank != "9" && storeRank != "10" && storeRank != "J" && storeRank != "Q" && storeRank != "K") {
 				print "Not a valid rank, try again: "
 				storeRank = System.console().readLine()
 			}
@@ -49,12 +49,10 @@ while (!finished) {
 	}
 }
 
-if 
-
-else if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
-	pokerHand "Flush"
+if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
+	pokerHand = "a Flush"
 }
-
+println "You got " + pokerHand
 //if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2
 /** 
 if (rank1 <= rank2) {

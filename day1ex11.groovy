@@ -1,7 +1,7 @@
 String storeRank, storeSuit
 int rank1, rank2, rank3, rank4, rank5
+int order1, order2, order3, order4, order5
 String suit1, suit2, suit3, suit4, suit5
-String order1, order2, order3, order4, order5
 String pokerHand = "Nothing"
 int cardNumber = 0
 boolean finished = false
@@ -48,10 +48,38 @@ while (!finished) {
 		finished = true
 	}
 }
-
-if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
-	pokerHand = "a Flush"
+if (rank1 <= rank2) {
+	order1 = rank1
+	order5 = rank2
 }
+if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
+	if (order1 == order 2 && order1 == order3 && order1 == order4 && order1 == order5) {
+		pokerHand = "a Straight Flush"
+	} else {
+		pokerHand = "a Flush"
+	}
+}
+else {
+	int matching4 = 0
+	if (order1 == order2) {
+		matching4++
+	}
+	if (order2 == order3) {
+		matching4++
+	}
+	if (order3 == order4) {
+		matching4++
+	}
+	if (order4 == order5) {
+		matching4++
+	}
+	if (order5 == order1) {
+		matching4++
+	}
+	if (matching4 >= 4) {
+		pokerHand = "Poker"
+	}
+ }
 println "You got " + pokerHand
 //if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2
 /** 

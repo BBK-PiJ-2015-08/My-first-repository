@@ -50,261 +50,261 @@ while (!finished) {
 }
 // Sorting card ranks from lowest to highest, then assigning these values to order1-order5.
 if (rank1 <= rank2 && rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
-	order1 = rank1 // n1
+	order1 = rank1
 	if (rank2 <= rank3 && rank2 <= rank4 && rank2 <= rank5) {
-		order2 = rank2 //n2
+		order2 = rank2
 		if (rank3 <= rank4 && rank3 <= rank5) {
-			order3 = rank3 //n3
+			order3 = rank3
 			if (rank4 <= rank5) {
-				order4 = rank4 //n4
-				order5 = rank5 //n5
+				order4 = rank4
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n6
-				order4 = rank4 //n7
+				order4 = rank5
+				order4 = rank4
 			}
 		}
 		else if (rank4 <= rank3 && rank4 <= rank5) {
-			order3 = rank4 //n8
+			order3 = rank4
 			if (rank3 <= rank5) {
-				order4 = rank3 //n9
-				order5 = rank5 //n10
+				order4 = rank3
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n11
-				order5 = rank3 //n12
+				order4 = rank5
+				order5 = rank3
 			}
 		}
 		else if (rank5 <= rank3 && rank5 <= rank4) {
-			order3 = rank5 //n13
+			order3 = rank5
 			if (rank3 <= rank4) {
-				order4 = rank3 //n14
-				order5 = rank4 //n15
+				order4 = rank3
+				order5 = rank4
 			}
 			else {
-				order4 = rank4 //n16
-				order5 = rank3 //n17
+				order4 = rank4
+				order5 = rank3
 			}
 		}
 	}
 	else if (rank3 <= rank2 && rank3 <= rank4 && rank3 <= rank5) {
 		order2 = rank3
 		if (rank2 <= rank4 && rank2 <= rank5) {
-			order3 = rank2 //n18
+			order3 = rank2
 			if (rank4 <= rank5) {
-				order4 = rank4 //n19
-				order5 = rank5 //n20
+				order4 = rank4
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n21
-				order4 = rank4 //n22
+				order4 = rank5
+				order4 = rank4
 			}
 		}
 		else if (rank4 <= rank2 && rank4 <= rank5) {
-			order3 = rank4 //n23
+			order3 = rank4
 			if (rank2 <= rank5) {
-				order4 = rank2 //n24
-				order5 = rank5 //n25
+				order4 = rank2
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n26
-				order5 = rank2 //n27
+				order4 = rank5
+				order5 = rank2
 			}
 		}
 	} else if (rank4 <= rank2 && rank4 <= rank3 && rank4 <= rank5) {
-		order2 = rank4 //n28
+		order2 = rank4
 		if (rank2 <= rank3 && rank2 <= rank5) {
-			order3 = rank2 //n29
+			order3 = rank2
 			if (rank3 <= rank5) {
-				order4 = rank3 //n30
-				order5 = rank5 //n31
+				order4 = rank3
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n32
-				order5 = rank3 //n33
+				order4 = rank5
+				order5 = rank3
 			}
 		}
 		else if (rank3 <= rank2 && rank3 <= rank5) {
-			order3 = rank3 //n34
+			order3 = rank3
 			if (rank2 <= rank5) {
-				order4 = rank2 //n35
-				order5 = rank5 //n36
+				order4 = rank2
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n37
-				order5 = rank2 //n38
+				order4 = rank5
+				order5 = rank2
 			}
 		}
 		else if (rank5 <= rank2 && rank5 <= rank3) {
-			order3 = rank5 //n39
+			order3 = rank5
 			if (rank2 <= rank3) {
-				order4 = rank2 //n40
-				order5 = rank3 //n41
+				order4 = rank2
+				order5 = rank3
 			}
 			else {
-				order4 = rank3 //n42
-				order5 = rank2 //n43
+				order4 = rank3
+				order5 = rank2
 			}
 		}
 	} else if (rank5 <= rank2 && rank5 <= rank3 && rank5 <= rank4) {
-		order2 = rank5 //n44
+		order2 = rank5
 		if (rank2 <= rank3 && rank2 <= rank4) {
-			order3 = rank2 //n45
+			order3 = rank2
 			if (rank3 <= rank4) {
-				order4 = rank3 //n46
-				order5 = rank4 //n47
+				order4 = rank3
+				order5 = rank4
 			}
 			else {
-				order4 = rank4 //n48
-				order5 = rank3 //n49
+				order4 = rank4
+				order5 = rank3
 			}
 		}
 	}
 }
 // else if (rank2 is lowest)
 else if (rank2 <= rank1 && rank2 <= rank3 && rank2 <= rank4 && rank2 <= rank5) {
-	order1 = rank2 //n50
+	order1 = rank2
 	if (rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
-		order2 = rank1 //n51
+		order2 = rank1
 		if (rank3 <= rank4 && rank3 <= rank5) {
-			order3 = rank3 //n52
+			order3 = rank3
 			if (rank4 <= rank5) {
-				order4 = rank4 //n52
-				order5 = rank5 //n53
+				order4 = rank4
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n54
-				order5 = rank4 //n55
+				order4 = rank5
+				order5 = rank4
 			}
 		}
 		else if (rank4 <= rank3 && rank4 <= rank5) {
-			order3 = rank4 //n56
+			order3 = rank4
 			if (rank3 <= rank5) {
-				order4 = rank3 //n57
-				order5 = rank5 //n58
+				order4 = rank3
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n59
-				order5 = rank3 //n60
+				order4 = rank5
+				order5 = rank3
 			}
 		}
 		else if (rank5 <= rank3 && rank5 <= rank4) {
-			order3 = rank5 //n61
+			order3 = rank5
 			if (rank3 <= rank4) {
-				order4 = rank3 //n62
-				order5 = rank4 //n63
+				order4 = rank3
+				order5 = rank4
 			}
 			else {
-				order4 = rank4 //n64
-				order5 = rank5 //n65
+				order4 = rank4
+				order5 = rank5
 			}
 		}
 	}
 	else if (rank3 <= rank1 && rank3 <= rank4 && rank3 <= rank5) {
-		order2 = rank3 //n66
+		order2 = rank3
 		if (rank1 <= rank4 && rank1 <= rank5) {
-			order3 = rank1 //n67
+			order3 = rank1
 			if (rank4 <= rank5) {
-				order4 = rank4 //n68
-				order5 = rank5 //n69
+				order4 = rank4
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n70
-				order5 = rank4 //n71
+				order4 = rank5
+				order5 = rank4
 			}
 		}
 		else if (rank4 <= rank1 && rank4 <= rank5) {
-			order3 = rank4 //n72
+			order3 = rank4
 			if (rank1 <= rank5) {
-				order4 = rank1 //n73
-				order5 = rank5 //n74
+				order4 = rank1
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n75
-				order5 = rank1 //n76
+				order4 = rank5
+				order5 = rank1
 			}
 		}
 		else if (rank5 <= rank1 && rank5 <= rank4) {
-			order3 = rank5 //n77
+			order3 = rank5
 			if (rank1 <= rank4) {
-				order4 = rank1 //n78
-				order5 = rank4 //n79
+				order4 = rank1
+				order5 = rank4
 			}
 			else {
-				order4 = rank4 //n80
-				order5 = rank1 //n81
+				order4 = rank4
+				order5 = rank1
 			}
 		}
 	}
 	else if (rank4 <= rank1 && rank4 <= rank3 && rank4 <= rank5) {
-		order2 = rank4 //n82
+		order2 = rank4
 		if (rank1 <= rank3 && rank1 <= rank5) {
 			order3 = rank1
 			if (rank3 <= rank5) {
-				order4 = rank3 //n83
-				order5 = rank5 //n84
+				order4 = rank3
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n85
-				order5 = rank3 //n86
+				order4 = rank5
+				order5 = rank3
 			}
 		}
 		else if (rank3 <= rank1 && rank3 <= rank5) {
-			order3 = rank3 //n87
+			order3 = rank3
 			if (rank1 <= rank5) {
-				order4 = rank1 //n88
-				order5 = rank5 //n89
+				order4 = rank1
+				order5 = rank5
 			}
 			else {
-				order4 = rank5 //n90
-				order5 = rank1 //n91
+				order4 = rank5
+				order5 = rank1
 			}
 		}
 		else if (rank5 <= rank1 && rank5 <= rank3) {
-			order3 = rank5 //n92
+			order3 = rank5
 			if (rank1 <= rank3) {
-				order4 = rank1 //n93
-				order5 = rank3 //n94
+				order4 = rank1
+				order5 = rank3
 			}
 			else {
-				order4 = rank3 //n95
-				order5 = rank1 //n96
+				order4 = rank3
+				order5 = rank1
 			}
 		}
 	}
 	else if (rank5 <=rank1 && rank5 <= rank3 && rank5 <= rank4) {
-		order2 = rank5 // n97
+		order2 = rank5
 		if (rank1 <= rank3 && rank1 <= rank4) {
-			order3 = rank1 //n98
+			order3 = rank1
 			if (rank3 <= rank4) {
-				order4 = rank3 //n99
-				order5 = rank4 //n100
+				order4 = rank3
+				order5 = rank4
 			}
 			else {
-				order4 = rank4 //n101
-				order5 = rank3 //n102
+				order4 = rank4
+				order5 = rank3
 			}
 		}
 		else if (rank3 <= rank1 && rank3 <= rank4) {
-			order3 = rank3 //n103
+			order3 = rank3
 			if (rank1 <= rank4) {
-				order4 = rank1 //n104
-				order5 = rank4 //n105
+				order4 = rank1
+				order5 = rank4
 			}
 			else {
-				order4 = rank4 //n106
-				order5 = rank1 //n107
+				order4 = rank4
+				order5 = rank1
 			}
 		}
 		else if (rank4 <= rank1 && rank4 <= rank3) {
-			order3 = rank4 //n108
+			order3 = rank4
 			if (rank1 <= rank3) {
-				order4 = rank1 //n109
-				order5 = rank3 //n110
+				order4 = rank1
+				order5 = rank3
 			}
 			else {
-				order4 = rank3 //n111
-				order5 = rank1 //n112
+				order4 = rank3
+				order5 = rank1
 			}
 		}
 	}
@@ -700,7 +700,7 @@ if (order4 == order5) {
 }
 else if (matchingA >= 4) {
 	pokerHand = "Poker"
-// If player entered 4 cards of same suit, result would have been Flush, but this will change it to higher ranking "Poker".
+//If 4 cards of same suit entered, result would be Flush, but this will change it to higher ranking "Poker"
 }
 else if (matchingA >= 2)
 {
@@ -742,71 +742,7 @@ else if (matchingA >= 2)
 else if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
 	pokerHand = "Straight"
 }
-
 println "You got " + pokerHand
-//if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2
-/** 
-if (rank1 <= rank2) {
-	if (rank1 <= rank3) {
-		if (rank1 <= rank4) {
-			if (rank1 <= rank5) {
-				order1 = rank1
-			} else if (rank5 <= rank1) {
-				order1 = rank5
-			}
-		}
-	}
-} 
--------
-
-if (rank1 <= rank2 && rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
-	order1 = rank1
-	if (rank2 <= rank3 && rank2 <= rank4 && rank2 <= rank5) {
-		order2 = rank2
-		if (rank3 <= rank4 && rank3 <= rank5) {
-			order3 = rank3
-			if (rank4 <= rank5) {
-				order4 = rank4
-				order5 = rank5
-			} else if (rank5 <= rank4) {
-				order4 = rank5
-				order5 = rank4
-			}
-		} else if (rank4 <= rank3 && rank4 <= rank5) {
-			order3 = rank4
-			if (rank3 <= rank5) {
-				order4 = rank3
-				order5 = rank5
-			} else if (rank5 <= rank3) {
-				order4 = rank5
-				order5 = rank3
-			}
-		} else if (rank5 <= rank3 && rank5 <= rank4) {
-			order3 = rank5
-			if (rank3 <= rank4) {
-				order4 = rank3
-				order5 = rank4
-			} else if (rank4 <= rank3) {
-				order4 = rank4
-				order5 = rank3
-			}
-		}
-	} else if (rank3 <= rank2 && rank3 <=rank4 && rank3 <= rank5) {
-		order2 = rank3
-		if (rank2 <= rank4 && rank2 <= rank5) {
-			order3 = rank2
-			if (rank4 <= rank5) {
-				order4 = rank4
-				order5 = rank5
-			} else if (rank5 <= rank4) {
-				order4 = rank5
-				order5 = rank4
-			}
-		} else if ()
-	}
-}
-//end of Rank1 littlest loop.
-**/
 /** ---------------
 Straight flush: 1-5,2-6,3-7,4-8,5-9,6-10,7-J,8-Q,9-K & all same suit
 Poker: 4 numbers are the same & any suit
@@ -817,3 +753,4 @@ Three of a kind: 3 numbers are the same
 Two pairs: 2 numbers are same & 2 other numbers the same
 Pair: 2 numbers are the same
 Nothing: any other situation
+**/

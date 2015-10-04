@@ -53,7 +53,7 @@ if (rank1 <= rank2) {
 	order5 = rank2
 }
 if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
-	if (order1 == order 2 && order1 == order3 && order1 == order4 && order1 == order5) {
+	if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
 		pokerHand = "a Straight Flush"
 	} else {
 		pokerHand = "a Flush"
@@ -77,7 +77,7 @@ if (order5 == order1) {
 }
 else if (matchingA >= 4) {
 	pokerHand = "Poker"
-// If player entered 4 cards of same suit, this would have been set to a Flush, but this will change it to the higher ranking "Poker".
+// If player entered 4 cards of same suit, result would have been Flush, but this will change it to higher ranking "Poker".
 }
 else if (matchingA >= 2)
 {
@@ -116,7 +116,7 @@ else if (matchingA >= 2)
 		pokerHand == "Pair"
 	}
 }
-else if ((order1+1) == order2 && (order2+1) == order3 (order3+1) == order4 (order4+1) == order5) {
+else if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
 	pokerHand = "Straight"
 }
 
@@ -184,9 +184,6 @@ if (rank1 <= rank2 && rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
 }
 //end of Rank1 littlest loop.
 **/
-
-//if (h1.substring(0,1)<=h2.substring(0,1))
-
 /** ---------------
 Straight flush: 1-5,2-6,3-7,4-8,5-9,6-10,7-J,8-Q,9-K & all same suit
 Poker: 4 numbers are the same & any suit

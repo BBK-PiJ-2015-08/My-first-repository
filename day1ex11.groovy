@@ -63,16 +63,31 @@ int matchingA = 0
 if (order1 == order2) {
 	matchingA++
 }
+if (order1 == order3) {
+	matchingA++
+}
+if (order1 == order4) {
+	matchingA++
+}
+if (order1 == order5) {
+	matchingA++
+}
 if (order2 == order3) {
+	matchingA++
+}
+if (order2 == order4) {
+	matchingA++
+}
+if (order2 == order5) {
 	matchingA++
 }
 if (order3 == order4) {
 	matchingA++
 }
-if (order4 == order5) {
+if (order3 == order5) {
 	matchingA++
 }
-if (order5 == order1) {
+if (order4 == order5) {
 	matchingA++
 }
 else if (matchingA >= 4) {

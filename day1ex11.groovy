@@ -742,9 +742,9 @@ else if (matchingA > 2)
 		if (matchingA == 3) {
 			pokerHand = "Full house"
 		}
-		else if (matchingA == 2) {
-			pokerHand = "Two pairs"
-		}
+	}
+	else if (matchingA == 2 && matchingB == 2) {
+		pokerHand = "Two pairs"
 	}
 	else if (matchingA == 2 ^ matchingB == 2) {
 		pokerHand = "Pair"

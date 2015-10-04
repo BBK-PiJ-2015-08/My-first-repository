@@ -48,10 +48,71 @@ while (!finished) {
 		finished = true
 	}
 }
-if (rank1 <= rank2) {
-	order1 = rank1
-	order5 = rank2
+// Sorting card ranks from lowest to highest, then assigning these values to order1-order5.
+if (rank1 <= rank2 && rank1 <= rank3 && rank1 <= rank4 && rank1 <= rank5) {
+	order1 = rank1 // n1
+	if (rank2 <= rank3 && rank2 <= rank4 && rank2 <= rank5) {
+		order2 = rank2 //n2
+		if (rank3 <= rank4 && rank3 <= rank5) {
+			order3 = rank3 //n3
+			if (rank4 <= rank5) {
+				order4 = rank4 //n4
+				order5 = rank5 //n5
+			}
+			else {
+				order4 = rank5 //n6
+				order4 = rank4 //n7
+			}
+		}
+		else if (rank4 <= rank3 && rank4 <= rank5) {
+			order3 = rank4 //n8
+			if (rank3 <= rank5) {
+				order4 = rank3 //n9
+				order5 = rank5 //n10
+			}
+			else {
+				order4 = rank5 //n11
+				order5 = rank3 //n12
+			}
+		}
+		else if (rank5 <= rank3 && rank5 <= rank4) {
+			order3 = rank5 //n13
+			if (rank3 <= rank4) {
+				order4 = rank3 //n14
+				order5 = rank4 //n15
+			}
+			else {
+				order4 = rank4 //n16
+				order5 = rank3 //n17
+			}
+		}
+	} else if (rank3 <= rank2 && rank3 <= rank4 && rank3 <= rank5) {
+		order2 = rank3
+		if (rank2 <= rank4 && rank2 <= rank5) {
+			order3 = rank2 //n18
+			if (rank4 <= rank5) {
+				order4 = rank4 //n19
+				order5 = rank5 //n20
+			}
+			else {
+				order4 = rank5 //n21
+				order4 = rank4 //n22
+			}
+		}
+	} else if (rank4 <= rank2 && rank4 <= rank3 && rank4 <= rank5) {
+		order2 = rank4
+	} else if (rank5 <= rank2 && rank5 <= rank3 && rank5 <= rank4) {
+		order2 = rank5
+	}
 }
+// else if (rank2 is lowest)
+
+
+// else if (rank3 is lowest)
+
+// else if (rank4 is lowest)
+
+// else if (rank5 is lowest)
 if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
 	if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
 		pokerHand = "a Straight Flush"

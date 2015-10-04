@@ -1,5 +1,5 @@
 String storage
-String rank1, rank2, rank3, rank4, rank5
+int rank1, rank2, rank3, rank4, rank5
 String suit1, suit2, suit3, suit4, suit5
 String order1, order2, order3, order4, order5
 String pokerHand = "Nothing"
@@ -14,17 +14,15 @@ while (!finished) {
 				print "Not a valid rank, try again: "
 				storage = System.console().readLine()
 			}
-			rank1 = storage
-// Converting values 10, J, Q and K to values that will run in alphanumerical order.
-			if (rank1 == "10") {
-				rank1 = "A"
-			} else if (rank1 == "J") {
-				rank1 = "B"
-			} else if (rank1 == "Q") {
-				rank1 = "C"
-			} else if (rank1 == "K") {
-				rank1 = "D"
+// Converting values J, Q and K to values that will run in numerical order.
+			if (storage == "J") {
+				storage = "11"
+			} else if (storage == "Q") {
+				storage = "12"
+			} else if (storage == "K") {
+				storage = "13"
 			}
+			rank1 = Integer.parseInt(storage)
 			print "Enter suit (spades, hearts, diamonds, clubs): "
 			storage = System.console().readLine()
 			while (storage != "spades" && storage != "hearts" && storage != "diamonds" && storage != "clubs") {
@@ -95,8 +93,10 @@ while (!finished) {
 	}
 }
 
-if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
-	println "All the same"
+if 
+
+else if (suit1 == suit2 && suit1 == suit3 && suit1 == suit4 && suit1 == suit5) {
+	pokerHand "Flush"
 }
 
 //if rank1 littler than all the others, assign it to order1. within this, if rank2 next littlest, assign to order2

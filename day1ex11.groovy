@@ -743,8 +743,7 @@ else if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 &&
 	pokerHand = "Straight"
 }
 println "You got " + pokerHand
-/** ---------------
-Straight flush: 1-5,2-6,3-7,4-8,5-9,6-10,7-J,8-Q,9-K & all same suit
+/** Straight flush: 1-5,2-6,3-7,4-8,5-9,6-10,7-J,8-Q,9-K & all same suit
 Poker: 4 numbers are the same & any suit
 Flush: Any numbers & all same suit
 Full house: 3 numbers are the same, 2 numbers the same
@@ -752,5 +751,4 @@ Straight: 1-5,2-6,3-7,4-8,5-9,6-10,7-J,8-Q,9-K & any suit
 Three of a kind: 3 numbers are the same
 Two pairs: 2 numbers are same & 2 other numbers the same
 Pair: 2 numbers are the same
-Nothing: any other situation
-**/
+Nothing: any other situation **/

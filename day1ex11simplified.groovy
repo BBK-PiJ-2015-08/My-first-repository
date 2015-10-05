@@ -36,8 +36,7 @@ while (!finished) {
 			if (rank1 <= rank2) {
 				order1 = rank1
 				order2 = rank2
-			}
-			else {
+			} else {
 				order1 = rank2
 				order2 = rank1
 			}
@@ -48,12 +47,10 @@ while (!finished) {
 				order3 = order2
 				order2 = order1
 				order1 = rank3
-			}
-			else if (rank3 <= order2) {
+			} else if (rank3 <= order2) {
 				order3 = order2
 				order2 = rank3
-			}
-			else {
+			} else {
 				order3 = rank3
 			}
 		} else if (cardNumber == 3) {
@@ -64,17 +61,14 @@ while (!finished) {
 				order3 = order2
 				order2 = order1
 				order1 = rank4
-			}
-			else if (rank4 <= order2) {
+			} else if (rank4 <= order2) {
 				order4 = order3
 				order3 = order2
 				order2 = rank4
-			}
-			else if (rank4 <= order3) {
+			} else if (rank4 <= order3) {
 				order4 = order3
 				order3 = rank4
-			}
-			else {
+			} else {
 				order4 = rank4
 			}
 		} else if (cardNumber == 4) {
@@ -86,23 +80,19 @@ while (!finished) {
 				order3 = order2
 				order2 = order1
 				order1 = rank5
-			}
-			else if (rank5 <= order2) {
+			} else if (rank5 <= order2) {
 				order5 = order4
 				order4 = order3
 				order3 = order2
 				order2 = rank5
-			}
-			else if (rank5 <= order3) {
+			} else if (rank5 <= order3) {
 				order5 = order4
 				order4 = order3
 				order3 = rank5
-			}
-			else if (rank5 <= order4) {
+			} else if (rank5 <= order4) {
 				order5 = order4
 				order4 = rank5
-			}
-			else {
+			} else {
 				order5 = rank5
 			}
 		}
@@ -177,8 +167,7 @@ else if (matchingA > 2)
 	if (matchingA >= 4) {
 		if (matchingB == 2) {
 			pokerHand = "Full house"
-		}
-		else {
+		} else {
 			pokerHand = "Poker"
 		}
 	}
@@ -194,14 +183,11 @@ else if (matchingA > 2)
 			pokerHand = "Full house"
 		}
 	}
-}
-else if (matchingA == 2 && matchingB == 2) {
+} else if (matchingA == 2 && matchingB == 2) {
 	pokerHand = "Two pairs"
-}
-else if (matchingA == 2 ^ matchingB == 2) {
+} else if (matchingA == 2 ^ matchingB == 2) {
 	pokerHand = "a Pair"
-}
-else if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
+} else if ((order1+1) == order2 && (order2+1) == order3 && (order3+1) == order4 && (order4+1) == order5) {
 	pokerHand = "Straight"
 }
 println "You got " + pokerHand

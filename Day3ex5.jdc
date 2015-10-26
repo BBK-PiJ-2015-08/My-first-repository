@@ -1,0 +1,31 @@
+Point point1 = new Point();
+Point point2 = new Point();
+println ("For your top left point, enter the x coordinate");
+point1.x = readDouble();
+println ("For your top left point, enter the y coordinate");
+point1.y = readDouble();
+println ("For your bottom right point, enter the x coordinate");
+point2.x = readDouble();
+println ("For your bottom right point, enter the y coordinate");
+point2.y = readDouble();
+Rectangle rectangle = new Rectangle();
+rectangle.upLeft = point1;
+rectangle.downRight = point2;
+
+double length = ( (rectangle.downRight.x)-(rectangle.upLeft.x) );
+double width = ( (rectangle.upLeft.y)-(rectangle.downRight.y) );
+double perimeter = (length + width) * 2;
+double area = length * width;
+
+println ("Perimeter is " + perimeter + "cm");
+println ("Area is " + area + "cm^2");
+
+class Rectangle {
+	Point upLeft;
+	Point downRight;
+}
+
+class Point {
+	double x;
+	double y;
+}

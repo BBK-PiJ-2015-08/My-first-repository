@@ -20,15 +20,22 @@ if (result) {
 else {
 	upper = userInput + 1
 	int dividedByU = upper - 1
-	for (i=0; i<10000; i++) {
-		
-		if (upper%dividedByU == 0) {
+	while (upper>1) {
+		if (upper % dividedByU == 0) {
 			resultUp = false
-			break;
 		}
-		upper = upper + 1
-		dividedByU = dividedByU - 1
+		dividedByU--
 	}
+	if 
+	lower = userInput - 1
+	int dividedByD = lower - 1
+	while (lower>1) {
+		if (lower % dividedByD == 0) {
+			resultDown = false
+		}
+		dividedByD--
+	}
+
 }
 if (!resultUp) {
 	print "resultUp is false"

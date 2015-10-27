@@ -4,9 +4,8 @@ println ("Enter a mathematical operation using +, -, * or /, e.g. 3/5");
 String userInput = readLine();
 String firstNumber = new String("");
 String secondNumber = new String("");
-double firstNum = 0;
-double secondNum = 0;
-double result
+//double firstNum = 0;
+//double secondNum = 0;
 String operator = new String("");
 if (userInput.length() < 2) {
 	String storage0 = userInput.substring(0,1);
@@ -21,6 +20,8 @@ if (userInput.length() < 2) {
 			String storage0 = userInput.substring(0,1);
 			String storage1 = userInput.substring(1,2);
 			String storage2 = userInput.substring(2,3);
+			String storage3 = "0";
+			String storage4 = "0";
 			println ("You entered 3 characters");
 		} else {
 			if (userInput.length() < 5) {
@@ -28,6 +29,7 @@ if (userInput.length() < 2) {
 				String storage1 = userInput.substring(1,2);
 				String storage2 = userInput.substring(2,3);
 				String storage3 = userInput.substring(3,4);
+				String storage4 = "0";
 				println ("You entered 4 characters");
 			} else {
 				if (userInput.length() < 6) {
@@ -38,7 +40,6 @@ if (userInput.length() < 2) {
 					String storage4 = userInput.substring(4,5);
 					println ("You entered 5 characters");
 				}
-				println ("Your input is too long!!");
 			}
 		}
 	}
@@ -251,7 +252,7 @@ if (!operator.equals("")) {
 			break;
 	}
 }
-///////////////////////
+if (storage3 != "0") {
 	switch (storage3) {
 	case "0":
 		secondNumber = secondNumber + storage3;
@@ -297,6 +298,8 @@ if (!operator.equals("")) {
 		println("Invalid input");
 		break;
 	}
+}
+if (storage4 != "0") {
 	switch (storage4) {
 	case "0":
 		secondNumber = secondNumber + storage4;
@@ -342,23 +345,26 @@ if (!operator.equals("")) {
 		println("Invalid input");
 		break;
 	}
-firstNum = Integer.parseInt(firstNumber);
-secondNum = Integer.parseInt(secondNumber);
+}
+double firstNum = Double.parseDouble(firstNumber);
+double secondNum = Double.parseDouble(secondNumber);
 
-/**
-	if (operator.equals("+")) {
-
+if (operator.equals("+")) {
+	double result = firstNum+secondNum;
+	println (firstNum + "+" + secondNum + "=" + result);
+} else {
+	if(operator.equals("-")) {
+		double result = firstNum-secondNum;
+		println (firstNum + "-" + secondNum + "=" + result);
 	} else {
-		if(operator.equals("-")) {
-
+		if (operator.equals("*")) {
+			double result = firstNum*secondNum;
+			println (firstNum + "*" + secondNum + "=" + result);
 		} else {
-			if (operator.equals("*")) {
-
-			} else {
-				if (operator.equals("/")) {
-
-				}
+			if (operator.equals("/")) {
+				double result = firstNum/secondNum;
+				println (firstNum + "/" + secondNum + "=" + result);
 			}
 		}
 	}
-**/
+}

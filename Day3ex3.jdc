@@ -6,6 +6,7 @@ String firstNumber = new String("");
 String secondNumber = new String("");
 double firstNum = 0;
 double secondNum = 0;
+double result
 String operator = new String("");
 if (userInput.length() < 2) {
 	String storage0 = userInput.substring(0,1);
@@ -29,6 +30,14 @@ if (userInput.length() < 2) {
 				String storage3 = userInput.substring(3,4);
 				println ("You entered 4 characters");
 			} else {
+				if (userInput.length() < 6) {
+					String storage0 = userInput.substring(0,1);
+					String storage1 = userInput.substring(1,2);
+					String storage2 = userInput.substring(2,3);
+					String storage3 = userInput.substring(3,4);
+					String storage4 = userInput.substring(4,5);
+					println ("You entered 5 characters");
+				}
 				println ("Your input is too long!!");
 			}
 		}
@@ -182,7 +191,174 @@ if (!operator.equals("")) {
 	default:
 		println("Invalid input");
 		break;
+	}
+} else {
+	switch (storage2) {
+			case "0":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "1":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "2":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "3":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "4":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "5":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "6":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "7":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "8":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "9":
+			firstNumber = firstNumber + storage2;
+			println ("You have input " + firstNumber);
+			break;
+		case "+":
+			operator = "+";
+			break;
+		case "-":
+			operator = "-";
+			break;
+		case "*":
+			operator = "*";
+			break;
+		case "/":
+			operator = "/";
+			break;
+		default:
+			println("Invalid input");
+			break;
+	}
 }
-}
-// how to express that number 1 is complete
+///////////////////////
+	switch (storage3) {
+	case "0":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "1":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "2":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "3":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "4":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "5":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "6":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "7":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "8":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	case "9":
+		secondNumber = secondNumber + storage3;
+		println ("You have input " + secondNumber);
+		break;
+	default:
+		println("Invalid input");
+		break;
+	}
+	switch (storage4) {
+	case "0":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "1":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "2":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "3":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "4":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "5":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "6":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "7":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "8":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	case "9":
+		secondNumber = secondNumber + storage4;
+		println ("You have input " + secondNumber);
+		break;
+	default:
+		println("Invalid input");
+		break;
+	}
+firstNum = Integer.parseInt(firstNumber);
+secondNum = Integer.parseInt(secondNumber);
+
+/**
+	if (operator.equals("+")) {
+
+	} else {
+		if(operator.equals("-")) {
+
+		} else {
+			if (operator.equals("*")) {
+
+			} else {
+				if (operator.equals("/")) {
+
+				}
+			}
+		}
+	}
 **/

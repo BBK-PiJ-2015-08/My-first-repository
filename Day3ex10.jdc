@@ -1,15 +1,22 @@
-println ("Please enter some text");
+println ("Please enter some a short string");
 String shortInput = new String("");
 shortInput = readLine();
-println ("Please enter a letter");
-String textInput = new String("");
+println ("Please enter some text to search for your short string");
+String longerInput = new String("");
 longerInput = readLine();
 int shortInputLength = shortInput.length();
 int longerInputLength = longerInput.length();
+int totalNumOfMatches = 0;
 for (int i=0; i<longerInput.length(); i++) {
-	for ()
-	if ((longerInput.charAt(i)).equals(shortInput.charAt(i))) {
-
+	int sameCharCount = 0;
+	for (int j=0; j<shortInput.length(); j++) {
+		if ((longerInput.charAt(i))==(shortInput.charAt(j))) {
+			sameCharCount = sameCharCount++;
+		}
+		if (sameCharCount == shortInput.length()) {
+			println("We have a match");
+			totalNumOfMatches = totalNumOfMatches + 1;
+		}
 	}
 }
 /**

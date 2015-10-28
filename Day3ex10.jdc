@@ -6,14 +6,15 @@ String longerInput = new String("");
 longerInput = readLine();
 int shortInputLength = shortInput.length();
 int longerInputLength = longerInput.length();
+int sameCharCount = 0;
 int totalNumOfMatches = 0;
 for (int i=0; i<longerInput.length(); i++) {
-	int sameCharCount = 0;
+//	sameCharCount = 0;
 	for (int j=0; j<shortInput.length(); j++) {
-		if ((longerInput.charAt(i))==(shortInput.charAt(j))) {
+		if ((longerInput.charAt(i)) == (shortInput.charAt(j))) {
 			sameCharCount = sameCharCount++;
 		}
-		if (sameCharCount == shortInput.length()) {
+		if (sameCharCount == shortInput.length() ) {
 			println("We have a match");
 			totalNumOfMatches = totalNumOfMatches + 1;
 		}

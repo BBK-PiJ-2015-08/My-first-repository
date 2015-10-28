@@ -1,0 +1,7 @@
+println ("Please enter some text");
+String userInput = new String("");
+userInput = readLine();
+int numofChars = userInput.length();
+for (int i=0; i<userInput.length(); i++) {
+	println(userInput.substring(i,i+1));
+}

@@ -48,43 +48,43 @@ if (userInput.length() < 2) {
 }
 switch (storage0) {
 	case "0":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "1":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "2":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "3":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "4":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "5":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "6":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "7":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "8":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "9":
-		firstNumber = firstNumber + storage0;
+		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	default:
@@ -94,43 +94,43 @@ switch (storage0) {
 //To check the value of the second character - if this is a number or a mathematical operator
 switch (storage1) {
 	case "0":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "1":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "2":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "3":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "4":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "5":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "6":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "7":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "8":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "9":
-		firstNumber = firstNumber + storage1;
+		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
 		break;
 	case "+":
@@ -152,43 +152,43 @@ switch (storage1) {
 if (!operator.equals("")) {
 	switch (storage2) {
 	case "0":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "1":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "2":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "3":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "4":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "5":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "6":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "7":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "8":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "9":
-		secondNumber = secondNumber + storage2;
+		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	default:
@@ -198,43 +198,43 @@ if (!operator.equals("")) {
 } else {
 	switch (storage2) {
 			case "0":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "1":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "2":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "3":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "4":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "5":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "6":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "7":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "8":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "9":
-			firstNumber = firstNumber + storage2;
+			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
 			break;
 		case "+":
@@ -257,43 +257,43 @@ if (!operator.equals("")) {
 if (storage3 != "0") {
 	switch (storage3) {
 	case "0":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "1":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "2":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "3":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "4":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "5":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "6":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "7":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "8":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "9":
-		secondNumber = secondNumber + storage3;
+		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	default:
@@ -304,43 +304,43 @@ if (storage3 != "0") {
 if (storage4 != "0") {
 	switch (storage4) {
 	case "0":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "1":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "2":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "3":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "4":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "5":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "6":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "7":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "8":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	case "9":
-		secondNumber = secondNumber + storage4;
+		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
 		break;
 	default:
@@ -350,25 +350,20 @@ if (storage4 != "0") {
 }
 double firstNum = Double.parseDouble(firstNumber);
 double secondNum = Double.parseDouble(secondNumber);
-
-if (operator.equals("+")) {
-	double result = firstNum+secondNum;
-	println (firstNum + "+" + secondNum + "=" + result);
-} else {
-	if(operator.equals("-")) {
+switch (operator) {
+	case "+":
+		double result = firstNum+secondNum;
+		println (firstNum + "+" + secondNum + "=" + result);
+	case "-":
 		double result = firstNum-secondNum;
 		println (firstNum + "-" + secondNum + "=" + result);
-	} else {
-		if (operator.equals("*")) {
-			double result = firstNum*secondNum;
-			println (firstNum + "*" + secondNum + "=" + result);
-		} else {
-			if (operator.equals("/")) {
-				double result = firstNum/secondNum;
-				println (firstNum + "/" + secondNum + "=" + result);
-			}
-		}
-	}
+	case "*":
+		double result = firstNum*secondNum;
+		println (firstNum + "*" + secondNum + "=" + result);
+	case "/":
+		double result = firstNum/secondNum;
+			println (firstNum + "/" + secondNum + "=" + result);
+	default: invalid input
 }
 
 class Storage {

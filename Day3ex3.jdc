@@ -1,4 +1,3 @@
-//String num1, num2;
 //String userInput = new String("");
 Storage storage0 = new Storage();
 Storage storage1 = new Storage();
@@ -9,8 +8,6 @@ println ("Enter a mathematical operation using +, -, * or /, e.g. 3/5");
 String userInput = readLine();
 String firstNumber = new String("");
 String secondNumber = new String("");
-//double firstNum = 0;
-//double secondNum = 0;
 String operator = new String("");
 if (userInput.length() < 2) {
 	storage0.thisChar = userInput.substring(0,1);
@@ -46,7 +43,7 @@ if (userInput.length() < 2) {
 		}
 	}
 }
-switch (storage0) {
+switch (storage0.thisChar) {
 	case "0":
 		firstNumber = firstNumber + storage0.thisChar;
 		println ("You have input " + firstNumber);
@@ -92,7 +89,7 @@ switch (storage0) {
 		break;
 }
 //To check the value of the second character - if this is a number or a mathematical operator
-switch (storage1) {
+switch (storage1.thisChar) {
 	case "0":
 		firstNumber = firstNumber + storage1.thisChar;
 		println ("You have input " + firstNumber);
@@ -150,7 +147,7 @@ switch (storage1) {
 		break;
 }
 if (!operator.equals("")) {
-	switch (storage2) {
+	switch (storage2.thisChar) {
 	case "0":
 		secondNumber = secondNumber + storage2.thisChar;
 		println ("You have input " + secondNumber);
@@ -196,7 +193,7 @@ if (!operator.equals("")) {
 		break;
 	}
 } else {
-	switch (storage2) {
+	switch (storage2.thisChar) {
 			case "0":
 			firstNumber = firstNumber + storage2.thisChar;
 			println ("You have input " + firstNumber);
@@ -254,8 +251,8 @@ if (!operator.equals("")) {
 			break;
 	}
 }
-if (storage3 != "0") {
-	switch (storage3) {
+if (storage3.thisChar != null) {
+	switch (storage3.thisChar) {
 	case "0":
 		secondNumber = secondNumber + storage3.thisChar;
 		println ("You have input " + secondNumber);
@@ -301,8 +298,8 @@ if (storage3 != "0") {
 		break;
 	}
 }
-if (storage4 != "0") {
-	switch (storage4) {
+if (storage4.thisChar != null) {
+	switch (storage4.thisChar) {
 	case "0":
 		secondNumber = secondNumber + storage4.thisChar;
 		println ("You have input " + secondNumber);
@@ -354,16 +351,22 @@ switch (operator) {
 	case "+":
 		double result = firstNum+secondNum;
 		println (firstNum + "+" + secondNum + "=" + result);
+		break;
 	case "-":
 		double result = firstNum-secondNum;
 		println (firstNum + "-" + secondNum + "=" + result);
+		break;
 	case "*":
 		double result = firstNum*secondNum;
 		println (firstNum + "*" + secondNum + "=" + result);
+		break;
 	case "/":
 		double result = firstNum/secondNum;
-			println (firstNum + "/" + secondNum + "=" + result);
-	default: invalid input
+		println (firstNum + "/" + secondNum + "=" + result);
+		break;
+	default: 
+		println("Invalid input");
+		break;
 }
 
 class Storage {

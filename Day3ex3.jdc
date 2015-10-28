@@ -1,5 +1,10 @@
 //String num1, num2;
 //String userInput = new String("");
+Storage storage0 = new Storage();
+Storage storage1 = new Storage();
+Storage storage2 = new Storage();
+Storage storage3 = new Storage();
+Storage storage4 = new Storage();
 println ("Enter a mathematical operation using +, -, * or /, e.g. 3/5");
 String userInput = readLine();
 String firstNumber = new String("");
@@ -8,36 +13,33 @@ String secondNumber = new String("");
 //double secondNum = 0;
 String operator = new String("");
 if (userInput.length() < 2) {
-	String storage0 = userInput.substring(0,1);
+	storage0.thisChar = userInput.substring(0,1);
 	println ("You entered 1 character");
 } else {
 	if (userInput.length() < 3) {
-		String storage0 = userInput.substring(0,1);
-		String storage1 = userInput.substring(1,2);
+		storage0.thisChar = userInput.substring(0,1);
+		storage1.thisChar = userInput.substring(1,2);
 		println ("You entered 2 characters");
 	} else {
 		if (userInput.length() < 4) {
-			String storage0 = userInput.substring(0,1);
-			String storage1 = userInput.substring(1,2);
-			String storage2 = userInput.substring(2,3);
-			String storage3 = "0";
-			String storage4 = "0";
+			storage0.thisChar = userInput.substring(0,1);
+			storage1.thisChar = userInput.substring(1,2);
+			storage2.thisChar = userInput.substring(2,3);
 			println ("You entered 3 characters");
 		} else {
 			if (userInput.length() < 5) {
-				String storage0 = userInput.substring(0,1);
-				String storage1 = userInput.substring(1,2);
-				String storage2 = userInput.substring(2,3);
-				String storage3 = userInput.substring(3,4);
-				String storage4 = "0";
+				storage0.thisChar = userInput.substring(0,1);
+				storage1.thisChar = userInput.substring(1,2);
+				Sstorage2.thisChar = userInput.substring(2,3);
+				storage3.thisChar = userInput.substring(3,4);
 				println ("You entered 4 characters");
 			} else {
 				if (userInput.length() < 6) {
-					String storage0 = userInput.substring(0,1);
-					String storage1 = userInput.substring(1,2);
-					String storage2 = userInput.substring(2,3);
-					String storage3 = userInput.substring(3,4);
-					String storage4 = userInput.substring(4,5);
+					storage0.thisChar = userInput.substring(0,1);
+					storage1.thisChar = userInput.substring(1,2);
+					storage2.thisChar = userInput.substring(2,3);
+					storage3.thisChar = userInput.substring(3,4);
+					storage4.thisChar = userInput.substring(4,5);
 					println ("You entered 5 characters");
 				}
 			}
@@ -367,4 +369,8 @@ if (operator.equals("+")) {
 			}
 		}
 	}
+}
+
+class Storage {
+	String thisChar;
 }

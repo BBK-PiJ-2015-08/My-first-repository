@@ -1,18 +1,26 @@
 println ("Please enter some text");
-String userInput = new String("");
-userInput = readLine();
+String shortInput = new String("");
+shortInput = readLine();
 println ("Please enter a letter");
-String letterInput = new String("");
-letterInput = readLine();
-int count = 0;
-int numofChars = userInput.length();
-for (int i=0; i<userInput.length(); i++) {
-	if ((userInput.substring(i,i+1)).equals(letterInput)) {
+String textInput = new String("");
+longerInput = readLine();
+int shortInputLength = shortInput.length();
+int longerInputLength = longerInput.length();
+for (int i=0; i<longerInput.length(); i++) {
+	for ()
+	if ((longerInput.charAt(i)).equals(shortInput.charAt(i))) {
+
+	}
+}
+/**
+	if ((textInput.substring(i,i+1)).equals(letterInput)) {
 		count = count + 1;
 	} else {
-		if (!(userInput.substring(i,i+1)).equals(letterInput)) {
+		if (!(textInput.substring(i,i+1)).equals(letterInput)) {
 			count = count;
 		}
 	}
 }
 println("Total number of " + letterInput + "'s is " + count);
+
+**/

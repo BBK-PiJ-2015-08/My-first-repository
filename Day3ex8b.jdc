@@ -1,0 +1,14 @@
+println ("Please enter some text");
+String userInput = new String("");
+userInput = readLine();
+int numofChars = userInput.length();
+for (int i=0; i<userInput.length(); i++) {
+	if ((userInput.substring(i,i+1)).equals(" ") ) {
+		println("");
+	} else {
+		if (!(userInput.substring(i,i+1)).equals(" ") ) {
+			print(userInput.substring(i,i+1));
+		}
+	}
+}
+println("");

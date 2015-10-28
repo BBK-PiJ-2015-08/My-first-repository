@@ -1,4 +1,3 @@
-//String userInput = new String("");
 Storage storage0 = new Storage();
 Storage storage1 = new Storage();
 Storage storage2 = new Storage();

@@ -163,6 +163,7 @@ if (!operator.equals("")) {
 		break;
 	}
 } else {
+	if (operator.equals("")) {
 	switch (storage2.thisChar) {
 			case "0":
 			firstNumber = firstNumber + storage2.thisChar;
@@ -209,43 +210,97 @@ if (!operator.equals("")) {
 		default:
 			println("Invalid input");
 			break;
+		}
 	}
 }
 if (storage3.thisChar != null) {
-	switch (storage3.thisChar) {
-	case "0":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "1":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "2":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "3":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "4":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "5":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "6":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "7":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "8":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	case "9":
-		secondNumber = secondNumber + storage3.thisChar;
-		break;
-	default:
-		println("Invalid input");
-		break;
+	if (!operator.equals("")) {
+		switch (storage3.thisChar) {
+			case "0":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "1":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "2":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "3":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "4":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "5":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "6":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "7":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "8":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			case "9":
+				secondNumber = secondNumber + storage3.thisChar;
+				break;
+			default:
+				println("Invalid input");
+				break;
+		}
+	//
+	} else {
+		if (operator.equals("")) {
+		switch (storage3.thisChar) {
+		case "0":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "1":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "2":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "3":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "4":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "5":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "6":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "7":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "8":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "9":
+			firstNumber = firstNumber + storage3.thisChar;
+			break;
+		case "+":
+			operator = "+";
+			break;
+		case "-":
+			operator = "-";
+			break;
+		case "*":
+			operator = "*";
+			break;
+		case "/":
+			operator = "/";
+			break;
+		default:
+			println("Invalid input");
+			break;
+		}
+		}
 	}
 }
 if (storage4.thisChar != null) {

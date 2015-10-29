@@ -70,15 +70,39 @@ while (remainder >= 0.01) {
 }
 println("Remainder is " + check);
 println("You'll get the following change: ");
-println(fiftyCount + " $50 notes");
-println(twentyCount + " $20 notes");
-println(tenCount + " $10 notes");
-println(fiveCount + " $5 notes");
-println(twoCount + " $2 coins");
-println(oneCount + " $1 coins");
-println(fiftyCent + " $0.50 coins");
-println(twentyCent + " $0.20 coins");
-println(tenCent + " $0.10 coins");
-println(fiveCent + " $0.05 coins");
-println(twoCent + " $0.02 coins");
-println(oneCent + " $0.01 coins");
+if (fiftyCount != 0) {
+	println(fiftyCount + " $50 notes");
+}
+if (twentyCount != 0) {
+	println(twentyCount + " $20 notes");
+}
+if (tenCount != 0) {
+	println(tenCount + " $10 notes");
+}
+if (fiveCount != 0) {
+	println(fiveCount + " $5 notes");
+}
+if (twoCount != 0) {
+	println(twoCount + " $2 coins");
+}
+if (oneCount != 0) {
+	println(oneCount + " $1 coins");
+}
+if (fiftyCent != 0) {
+	println(fiftyCent + " $0.50 coins");
+}
+if (twentyCent != 0) {
+	println(twentyCent + " $0.20 coins");
+}
+if (tenCent != 0) {
+	println(tenCent + " $0.10 coins");
+}
+if (fiveCent != 0) {
+	println(fiveCent + " $0.05 coins");
+}
+if (twoCent != 0) {
+	println(twoCent + " $0.02 coins");
+}
+if (oneCent != 0) {
+	println(oneCent + " $0.01 coins");
+}

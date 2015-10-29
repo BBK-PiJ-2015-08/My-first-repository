@@ -1,24 +1,52 @@
-println ("Please enter some a short string");
+//N.B. charAt might not work cos it's a javascript method...
+Storage longStorage = new Storage();
+Storage shortStorage = new Storage();
 String shortInput = new String("");
+String longerInput = new String("");
+println ("Please enter some a short string");
 shortInput = readLine();
 println ("Please enter some text to search for your short string");
-String longerInput = new String("");
 longerInput = readLine();
 int shortInputLength = shortInput.length();
 int longerInputLength = longerInput.length();
 int sameCharCount = 0;
 int totalNumOfMatches = 0;
-for (int i=0; i<longerInput.length(); i++) {
-//	sameCharCount = 0;
-	for (int j=0; j<shortInput.length(); j++) {
-		if ((longerInput.charAt(i)) == (shortInput.charAt(j))) {
-			sameCharCount = sameCharCount++;
+for (int i=0; i<longerInputLength; i++) {
+	longStorage.thisChar = longerInput.charAt(i);
+	int j=0;
+	while (j<shortInputLength) {
+		shortStorage.thisChar = shortInput.charAt(j);
+		if (shortStorage.thisChar == longStorage.thisChar) {
+			println("1st match");
+			j++;
+			int k = i+1;
+			longStorage.thisChar = longerInput.charAt(k);
+			shortStorage.thisChar = shortInput.charAt(j);
+			if (shortStorage.thisChar == longStorage.thisChar) {
+				println("2nd match");
+			}
+		j--;
 		}
-		if (sameCharCount == shortInput.length() ) {
-			println("We have a match");
-			totalNumOfMatches = totalNumOfMatches + 1;
-		}
+		j++;
 	}
+//	for (int j=0; j<shortInputLength; j++) {
+//	shortStorage.thisChar = shortInput.charAt(j);
+//	if (longStorage.thisChar == shortStorage.thisChar) {
+//
+//	}
+//		if ((longStorage.thisChar)==(shortStorage.thisChar)) {
+//			sameCharCount = sameCharCount++;
+//		}
+//		if (sameCharCount == shortInput.length() ) {
+//			println("We have a match");
+//			totalNumOfMatches = totalNumOfMatches + 1;
+//			sameCharCount = 0;
+//		}
+//	}
+}
+
+class Storage {
+	char thisChar;
 }
 /**
 	if ((textInput.substring(i,i+1)).equals(letterInput)) {

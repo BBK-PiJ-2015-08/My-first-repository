@@ -3,7 +3,7 @@ Storage storage1 = new Storage();
 Storage storage2 = new Storage();
 Storage storage3 = new Storage();
 Storage storage4 = new Storage();
-println ("Enter a mathematical operation using +, -, * or /, e.g. 3/5");
+println ("Enter a mathematical operation using +, -, * or /, e.g. 3/5; maximum of 5 characters");
 String userInput = readLine();
 String firstNumber = new String("");
 String secondNumber = new String("");
@@ -15,20 +15,17 @@ if (userInput.length() < 2) {
 	if (userInput.length() < 3) {
 		storage0.thisChar = userInput.substring(0,1);
 		storage1.thisChar = userInput.substring(1,2);
-		println ("You entered 2 characters");
 	} else {
 		if (userInput.length() < 4) {
 			storage0.thisChar = userInput.substring(0,1);
 			storage1.thisChar = userInput.substring(1,2);
 			storage2.thisChar = userInput.substring(2,3);
-			println ("You entered 3 characters");
 		} else {
 			if (userInput.length() < 5) {
 				storage0.thisChar = userInput.substring(0,1);
 				storage1.thisChar = userInput.substring(1,2);
 				storage2.thisChar = userInput.substring(2,3);
 				storage3.thisChar = userInput.substring(3,4);
-				println ("You entered 4 characters");
 			} else {
 				if (userInput.length() < 6) {
 					storage0.thisChar = userInput.substring(0,1);
@@ -36,7 +33,6 @@ if (userInput.length() < 2) {
 					storage2.thisChar = userInput.substring(2,3);
 					storage3.thisChar = userInput.substring(3,4);
 					storage4.thisChar = userInput.substring(4,5);
-					println ("You entered 5 characters");
 				}
 			}
 		}

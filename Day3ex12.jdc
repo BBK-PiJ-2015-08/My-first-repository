@@ -1,0 +1,10 @@
+println("Please enter the cost of an item");
+String costString = readLine();
+println("Please enter what you paid for an item");
+String paidString = readLine();
+double cost = parseDouble(costString);
+double paid = parseDouble(paidString);
+double remainder = paid;
+println("Cost is " + cost);
+println("You paid " + paid);
+println("Remainder is " + remainder);

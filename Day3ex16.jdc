@@ -1,24 +1,13 @@
-Storage storage0 = new Storage();
-Storage storage1 = new Storage();
-Storage storage2 = new Storage();
-Storage storage3 = new Storage();
-Storage storage4 = new Storage();
-Storage storage5 = new Storage();
-Storage storage6 = new Storage();
-
+String storage = new String("");
 println ("Enter a number with ,'s and .'s e.g. 23,419.34");
 String userInput = readLine();
 for (int i; i<userInput.length; i++) {
-	if (userInput.charAt(i) == ",")
-	{}
-	else {
-		if (!(userInput.charAt(i)) == ",") {
-			storage(i).thisChar = userInput.charAt(i);
-			println ("This char is " + storage(i).thisChar);
-		}
+	if (Character.isDigit(userInput.charAt(i))) {
+		storage0 = storage0 + (Character.toString(userInput.charAt(i));
 	}
 }
+println ("The string is " + storage);
 
-class Storage {
-	char thisChar;
-}
+//class Storage {
+//	char thisChar;
+//}

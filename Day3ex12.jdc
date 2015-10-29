@@ -69,4 +69,16 @@ while (remainder >= 0.01) {
 	oneCent = oneCent + 1;
 }
 println("Remainder is " + check);
-println("You'll get the following change: ")
+println("You'll get the following change: ");
+println(fiftyCount + " $50 notes");
+println(twentyCount + " $20 notes");
+println(tenCount + "$10 notes");
+println(fiveCount + "$5 notes");
+println(twoCount + "$2 coins");
+println(oneCount + "$1 coins");
+println(fiftyCent + "$0.50 coins");
+println(twentyCent + "$0.20 coins");
+println(tenCent + "$0.10 coins");
+println(fiveCent + "$0.05 coins");
+println(twoCent + "$0.02 coins");
+println(oneCent + "$0.01 coins");

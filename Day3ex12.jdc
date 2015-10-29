@@ -4,7 +4,8 @@ println("Please enter what you paid for an item");
 String paidString = readLine();
 double cost = Double.parseDouble(costString);
 double paid = Double.parseDouble(paidString);
-double remainder = paid;
+double remainder = paid - cost;
+double check = remainder;
 println("Cost is " + cost);
 println("You paid " + paid);
 int fiftyCount = 0;
@@ -43,6 +44,29 @@ while (remainder >= 1) {
 	remainder = remainder - 1;
 	oneCount = oneCount + 1;
 }
-
-
-println("Remainder is " + remainder);
+while (remainder >= 0.5) {
+	remainder = remainder - 0.5;
+	fiftyCent = fiftyCent + 1;
+}
+while (remainder >= 0.2) {
+	remainder = remainder - 0.2;
+	twentyCent = twentyCent + 1;
+}
+while (remainder >= 0.1) {
+	remainder = remainder - 0.1;
+	tenCent = tenCent + 1;
+}
+while (remainder >= 0.05) {
+	remainder = remainder - 0.05;
+	fiveCent = fiveCent + 1;
+}
+while (remainder >= 0.02) {
+	remainder = remainder - 0.02;
+	twoCent = twoCent + 1;
+}
+while (remainder >= 0.01) {
+	remainder = remainder - 0.01;
+	oneCent = oneCent + 1;
+}
+println("Remainder is " + check);
+println("You'll get the following change: ")

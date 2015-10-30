@@ -1,0 +1,22 @@
+String str = new String("");
+println("Enter your word or text");
+str = readLine();
+int strLength = str.length();
+//int firstPlace = 0;
+int endPlace = strLength - 1;
+int halfLength = strLength / 2;
+boolean isPalindrome = true;
+for (int i=0; i<halfLength; i++) {
+	if (!(str.substring(i,i+1)).equals(str.substring(endPlace,endPlace+1) ) ) {
+		isPalindrome = false;
+	}
+	endPlace--;
+}
+if (isPalindrome) {
+	println ("Your word " + str + " is a palindrome");
+}
+else {
+	if (!isPalindrome) {
+		println("Your word " + str + " is not a palindrome");
+	}
+}

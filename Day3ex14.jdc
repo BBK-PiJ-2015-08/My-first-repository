@@ -6,6 +6,5 @@ palindrome = str;
 int strLength = str.length();
 for (int i=strLength; i>1; i--) {
 	palindrome = palindrome + str.substring(i-2,i-1);
-	println(i);
 }
 println (palindrome);

@@ -1,0 +1,19 @@
+int power (int b, int e) {
+	println("Enter your base");
+//	int b = readInt();
+	int result = b;
+	println("Enter your exponent");
+//	int e = readInt();
+	if (e==0) {
+		result = 1;
+	} else {
+		if (e!=0) {
+			for (int i=1; i<e; i++) {
+				result = result * b;
+			}
+		}
+	}
+	return result;
+}
+
+power(2, 2);

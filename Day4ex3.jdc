@@ -1,9 +1,10 @@
-int power (int b, int e) {
+println;
+int power(int result) {
 	println("Enter your base");
-//	int b = readInt();
+	b = readInt();
 	int result = b;
 	println("Enter your exponent");
-//	int e = readInt();
+	e = readInt();
 	if (e==0) {
 		result = 1;
 	} else {
@@ -13,7 +14,7 @@ int power (int b, int e) {
 			}
 		}
 	}
-	return result;
+	println(result);
 }
 
-power(2, 2);
+power();

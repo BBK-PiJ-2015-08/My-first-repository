@@ -3,32 +3,24 @@ public class Calculator {
 	private int num2;
 
 	public int add (int num1, int num2) {
-		int num1 = Integer.parseInt(numberOne);
-		int num2 = Integer.parseInt(numberTwo);
 		int result = num1 + num2;
 		System.out.println(result);
 		return result;
 	}
 
 	public int subtract (int num1, int num2) {
-		int num1 = Integer.parseInt(numberOne);
-		int num2 = Integer.parseInt(numberTwo);
 		int result = num1 - num2;
 		System.out.println(result);
 		return result;
 	}
 
 	public int multiply (int num1, int num2) {
-		int num1 = Integer.parseInt(numberOne);
-		int num2 = Integer.parseInt(numberTwo);
 		int	result = num1 * num2;
 		System.out.println(result);
 		return result;
 	}
 
 	public double divide (int num1, int num2) {
-		int num1 = Integer.parseInt(numberOne);
-		int num2 = Integer.parseInt(numberTwo);
 		double double1 = (double) num1;
 		double double2 = (double) num2;
 		double doubleResult = double1 / double2;
@@ -37,8 +29,6 @@ public class Calculator {
 	}
 
 	public double modulus (int num1, int num2) {
-		int num1 = Integer.parseInt(numberOne);
-		int num2 = Integer.parseInt(numberTwo);
 		double double1 = (double) num1;
 		double double2 = (double) num2;
 		double doubleResult = double1 % double2;
@@ -54,6 +44,8 @@ public class Calculator {
 		String numberTwo = System.console().readLine();
 		System.out.println("Enter +, -, *, / or %");
 		String choice = System.console().readLine();
+		int num1 = Integer.parseInt(numberOne);
+		int num2 = Integer.parseInt(numberTwo);
 		switch(choice) {
 			case "+":
 				System.out.println(calculator.add(num1,num2));

@@ -7,4 +7,5 @@ public class Day6Ex2a {
 	src[4] = 10;
 	src[5] = 12;
 	src[6] = 14;
+	System.out.println("Your source array: " + Arrays.toString(src)) )
 }

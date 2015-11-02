@@ -1,4 +1,4 @@
-public class Day6Ex2a {
+public class Day6Ex2 {
 	public static void main(String[] args) {
 		ArrayCopier arrayCopier = new ArrayCopier();
 		int[] src = new int[7];

@@ -3,7 +3,10 @@ public class Day6Ex1 {
 	public static void main(String[] args) {
 		Calculator calculator = new Calculator();
 		System.out.println(calculator.add(1,2));
-		System.out.println(calculator)
+		System.out.println(calculator.substract(50,49));
+		System.out.println(calculator.multiply(15,4));
+		System.out.println(calculator.divide(100,5));
+		System.out.println(calculator.modulus(99,4));
 /**
 		System.out.println("Enter an integer");
 		String numberOne = System.console().readLine();

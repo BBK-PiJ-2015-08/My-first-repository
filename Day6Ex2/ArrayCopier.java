@@ -1,6 +1,6 @@
 public class ArrayCopier {
 
-	public void copy(int[] src, int[] dst) {
+	public int[] copy(int[] src, int[] dst) {
 		if (src.length==dst.length || src.length>dst.length) {
 			for (int i=0; i<dst.length; i++) {
 				dst[i] = src[i];
@@ -14,6 +14,7 @@ public class ArrayCopier {
 				dst[i] = 0;
 			}
 		}
+		return dst;
 	}
 
 	public void printArray(int[] dst) {

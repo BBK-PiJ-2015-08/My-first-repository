@@ -1,13 +1,10 @@
 public class ArrayCopier {
 
 	public void copy(int[] src, int[] dst) {
-		if (src.length==dst.length) {
-			for (int i=0; i<src.length; i++) {
+		if (src.length==dst.length || src.length>dst.length) {
+			for (int i=0; i<dst.length; i++) {
 				dst[i] = src[i];
 			}
-		}
-		else if (src.length>dst.length) {
-
 		}
 		else if (src.length<dst.length) {
 			for (int i=0; i<src.length; i++) {
@@ -17,8 +14,6 @@ public class ArrayCopier {
 				dst[i] = 0;
 			}
 		}
-	}
-
 	}
 
 	public void printArray(int[] dst) {

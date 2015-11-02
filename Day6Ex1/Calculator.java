@@ -35,5 +35,4 @@ public class Calculator {
 		System.out.println(doubleResult);
 		return doubleResult;
 	}
-
 }

@@ -1,6 +1,10 @@
+public class Day6Ex1 {
+
 	public static void main(String[] args) {
 		Calculator calculator = new Calculator();
-//		System.out.println(calculator.add(1,2));
+		System.out.println(calculator.add(1,2));
+		System.out.println(calculator)
+/**
 		System.out.println("Enter an integer");
 		String numberOne = System.console().readLine();
 		System.out.println("Enter another");
@@ -29,4 +33,6 @@
 				System.out.println("Invalid input");
 				break; 
 		}
+**/
 	}
+}

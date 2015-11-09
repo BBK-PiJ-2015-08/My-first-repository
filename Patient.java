@@ -21,10 +21,12 @@ public class Patient {
 	
 	public void printPatient() {
 		System.out.println("This patient is called:" + this.name + ". They are " + this.age + " years old. Their illness is: " + this.illness + ".");
-		if(this.nextPatient == null) {
-			return;
+		if(this.nextPatient != null) {
+		System.out.println("the next patient has been called");
+			this.nextPatient.printPatient();
+			
 		} else {
-			this.printPatient();
+			
 		}
 	}
 }

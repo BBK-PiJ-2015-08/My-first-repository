@@ -1,13 +1,15 @@
 String input = new String("");
 String storage = new String("");
+char ch = '';
 println("Enter a phrase to check palindrome-hood");
 input = readLine();
 int inputLength = input.length();
 for (int i=0; i<inputLength; i++) {
-	if (Character.isLetter(input.substring(i,i+1))) {
-		storage = storage + Character.toLowerCase(input.substring(i,i+1));
+	ch = input.substring(i,i+1);
+	if (Character.isLetter(ch))) {
+		storage = storage + Character.toString(Character.toLowerCase(ch));
 	} else {
-		println("The character " + input.substring(i,i+1) + " was removed");
+		println("A character was removed");
 	}
 }
 println ("Your edited input is " + storage);

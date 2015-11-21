@@ -13,3 +13,21 @@ for (int i=0; i<inputLength; i++) {
 	}
 }
 println ("Your edited input is " + storage);
+int storageLength = storage.length();
+int endPlace = storageLength - 1;
+int halfLength = storageLength / 2;
+boolean isPalindrome = true;
+for (int j = 0; j < halfLength; j++) {
+	if (!(storage.substring(j,j+1)).equals(storage.substring(endPlace,endPlace+1) ) ) {
+		isPalindrome = false;
+	}
+	endPlace--;
+}
+if (isPalindrome) {
+	println ("Your phrase " + storage + " is a relaxed palindrome");
+}
+else {
+	if (!isPalindrome) {
+		println("Your phrase " + storage + " is not a relaxed palindrome");
+	}
+}

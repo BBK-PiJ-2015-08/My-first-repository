@@ -1,13 +1,22 @@
 Point point1 = new Point();
 Point point2 = new Point();
 println ("For your top left point, enter the x coordinate");
-point1.x = readDouble();
+String storage = readLine();
+point1.x = Double.parseDouble(storage);
+
+
 println ("For your top left point, enter the y coordinate");
-point1.y = readDouble();
+storage = readLine();
+point1.y = Double.parseDouble(storage);
+
 println ("For your bottom right point, enter the x coordinate");
-point2.x = readDouble();
+storage = readLine();
+point2.x = Double.parseDouble(storage);
+
 println ("For your bottom right point, enter the y coordinate");
-point2.y = readDouble();
+storage = readLine();
+point2.y = Double.parseDouble(storage);
+
 Rectangle rectangle = new Rectangle();
 rectangle.upLeft = point1;
 rectangle.downRight = point2;
@@ -15,22 +24,33 @@ rectangle.downRight = point2;
 Point point1a = new Point();
 Point point2a = new Point();
 println ("For your top left point, enter the x coordinate");
-point1a.x = readDouble();
+storage = readLine();
+point1a.x = Double.parseDouble(storage);
+
 println ("For your top left point, enter the y coordinate");
-point1a.y = readDouble();
+storage = readLine();
+point1a.y = Double.parseDouble(storage);
+
 println ("For your bottom right point, enter the x coordinate");
-point2a.x = readDouble();
+storage = readLine();
+point2a.x = Double.parseDouble(storage);
+
 println ("For your bottom right point, enter the y coordinate");
-point2a.y = readDouble();
+storage = readLine();
+point2a.y = Double.parseDouble(storage);
+
 Rectangle rectangle2 = new Rectangle();
 rectangle2.upLeft = point1a;
 rectangle2.downRight = point2a;
 
 Point pointUser = new Point();
 println ("Enter the x coordinate for a point");
-pointUser.x = readDouble();
+storage = readLine();
+pointUser.x = Double.parseDouble(storage);
+
 println ("Enter the y coordinate for this point");
-pointUser.y = readDouble();
+storage = readLine();
+pointUser.y = Double.parseDouble(storage);
 
 Boolean inside1 = false;
 Boolean inside2 = false;

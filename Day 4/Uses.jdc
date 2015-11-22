@@ -1,0 +1,7 @@
+public class Uses {
+	public static void main(String[] args) {
+		int[] src = { 0, 1, 2, 3, 4};
+		int[] dst = new int[4];
+		ArrayCopier.copy(src, dst);
+	}
+}

@@ -1,0 +1,7 @@
+public class ArrayCopier {
+	private static void copy(int[] src, int[] dst) {
+		for (int i=0; i < src.length; i++) {
+			dst[i]=src[i];
+		}
+	}
+}

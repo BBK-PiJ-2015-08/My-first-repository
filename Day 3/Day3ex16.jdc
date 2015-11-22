@@ -13,9 +13,6 @@ for (int i=0; i<length; i++) {
 		}
 	}
 }
-println ("The string is " + storage);
-Double yourNumber = Double.parseDouble(storage);
-//BigDecimal yourNum = new BigDecimal(storage);
-//BigDecimal result = new BigDecimal();
+int yourNumber = Integer.parseInt(storage);
 Double result = yourNumber/2;
 println ("Half of " + yourNumber + " equals " + result);

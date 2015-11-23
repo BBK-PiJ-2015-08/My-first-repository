@@ -1,4 +1,4 @@
-public class Person implements PersonQueue {
+public class Person {
 	private String name;
 	private int age;
 	private Person next;
@@ -27,7 +27,7 @@ public class Person implements PersonQueue {
 		return previous;
 	}
 	
-	public void setNext(Person next) {
+	public void setNext(Person person) {
 		this.next = next;
 	}
 	

@@ -1,8 +1,14 @@
-public class Supermarket implements PersonQueue {
-	private Person personListStart = null;
+public class Supermarket {
+	private PersonQueue queue;
+
+	public Supermarket() {
+		queue = new PersonQueue();
+	}
+
+	//personListStart = null;
 
 
-	public void addPerson(Person person) {
+	public void addPerson(Person newPerson) {
 		//Supermarket.insert(Person person);
 		if (this.personListStart == null) {
 			this.personListStart = person;
@@ -12,8 +18,8 @@ public class Supermarket implements PersonQueue {
 		}
 	}
 
-	public void servePerson() {
-		Supermarket.retrieve();
+	public static void servePerson() {
+		PersonQueue.retrieve();
 	}
 
 	public static void main(String[] args) {

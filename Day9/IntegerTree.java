@@ -1,5 +1,5 @@
-public class IntegerTree {
-	private IntegerTreeNode first = null;
+public interface IntegerTree {
+	IntegerTreeNode first = null;
 
 	// public void launch() {
 	// 	IntegerTreeNode t1 = new IntegerTreeNode(0);

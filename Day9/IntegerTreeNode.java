@@ -1,5 +1,5 @@
-public class IntegerTreeNode {
-	int value;
+public class IntegerTreeNode implements IntegerTree {
+	private int value;
 	private IntegerTreeNode left;
 	private IntegerTreeNode right;
 
@@ -9,11 +9,14 @@ public class IntegerTreeNode {
 		this.right = null;
 	}
 
-//Add a method toString() to the class. This methods must return a representation of your tree in String form, where every node is represented as a list in square brackets containing its value, the left branch, and the right branch; the left branch should be prefixed by “L” and the right branch by R, and an empty branch should be shown as an empty pair of square brackets. Some examples of outputs in Figure 1.																															After you have commited this version of toString(), make another version that returns a simplified representation, where every node is represented as a list in square brackets containing its value and its branches, but only if they are not empty; without using the “L” and “R” prefixes. Some examples of outputs in Figure 1.																				Check that both versions of the method work by adding several elements and printing the String representation of the tree.
+//Add a method toString() to the class. This methods must return a representation of your tree in String form, where every node is represented as a list in square brackets containing its value, the left branch, and the right branch; the left branch should be prefixed by “L” and the right branch by R, and an empty branch should be shown as an empty pair of square brackets. Some examples of outputs in Figure 1.																															After you have commited this version of toString(), make another version that returns a simplified representation, where every node is represented as a list in square brackets containing its value and its branches, but only if they are not empty; without using the “L” and “R” prefixes. Some examples of outputs in Figure 1.														Check that both versions of the method work by adding several elements and printing the String representation of the tree.
 
 	public int toString() {
-
+		if (left != null) {
+			
+		}
 	}
+
 	public int getDepth() {
 		int leftDepth = 0;
 		if (left != null) {

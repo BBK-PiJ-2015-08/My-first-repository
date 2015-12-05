@@ -10,9 +10,7 @@ public class MobilePhone extends OldPhone {
 	private String number9 = null;
 	private String number10 = null;
 
-	@Override
-	public void call(String number) {
-		super.call(number);
+	private void recordNumber(String number) {
 		if (number1 == null) {
 			number1 = number;
 		} else if (number2 == null) {
@@ -46,16 +44,48 @@ public class MobilePhone extends OldPhone {
 			number10 = number;
 		}
 	}
-
-
+	@Override
+	public void call(String number) {
+		recordNumber(number);
+		super.call(number);
+		
+	}
+	public void printNumbers() {
+		if(number1 != null) {
+			System.out.println("1: "+ number1);
+		}
+		if(number2 != null) {
+			System.out.println("2: "+ number2);
+		}
+		if(number3 != null) {
+			System.out.println("3: "+ number3);
+		}
+		if(number4 != null) {
+			System.out.println("4: "+ number4);
+		}
+		if(number5 != null) {
+			System.out.println("5: "+ number5);
+		}
+		if(number6 != null) {
+			System.out.println("6: "+ number6);
+		}
+		if(number7 != null) {
+			System.out.println("7: "+ number7);
+		}
+		if(number8 != null) {
+			System.out.println("8: "+ number8);
+		}
+		if(number9 != null) {
+			System.out.println("9: "+ number9);
+		}
+		if(number10 != null) {
+			System.out.println("10: "+ number10);
+		}
+	}
 	public void ringAlarm(String alarmName) {
 		System.out.println("Your" + alarmName + " is sounding!");
 	}
 	public void playGame(String game) {
 		System.out.println("Now playing " + game);
-	}
-	@Override
-	public void call(String number) {
-		System.out.println("Calling <" + number + ">...");
 	}
 }

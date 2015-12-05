@@ -83,7 +83,7 @@ public class MobilePhone extends OldPhone {
 		}
 	}
 	public void ringAlarm(String alarmName) {
-		System.out.println("Your" + alarmName + " is sounding!");
+		System.out.println("Your " + alarmName + " alarm is sounding!");
 	}
 	public void playGame(String game) {
 		System.out.println("Now playing " + game);

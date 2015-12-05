@@ -5,7 +5,7 @@ public class PhoneLauncher {
 	}
 	public void launch() {
 	// your code creating and using SmartPhone here...
-		SmartPhone iPhone = new SmartPhone("Apple");
+		SmartPhone iPhone = new SmartPhone();
 		iPhone.ringAlarm("morning");
 		iPhone.findPosition();
 		iPhone.browseWeb("http://www.google.com");

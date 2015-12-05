@@ -1,4 +1,5 @@
 public class MobilePhone extends OldPhone {
+//	this.brand = "iPhone";
 	private String number1 = null;
 	private String number2 = null;
 	private String number3 = null;
@@ -10,6 +11,10 @@ public class MobilePhone extends OldPhone {
 	private String number9 = null;
 	private String number10 = null;
 
+	public MobilePhone(String brand) {
+		super(brand);
+	}
+	
 	public void recordNumber(String number) {
 		if (number1 == null) {
 			number1 = number;

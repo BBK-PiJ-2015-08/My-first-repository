@@ -1,4 +1,8 @@
 public class SmartPhone extends MobilePhone {
+	public SmartPhone(String brand) {
+		super(brand);
+	}
+
 	@Override
 	public void call(String number) {
 		if(number.substring(0,2).equals("00")) {
@@ -7,8 +11,6 @@ public class SmartPhone extends MobilePhone {
 		} else {
 			super.call(number);
 		}
-
-
 	}
 	public void browseWeb(String webURL) {
 		System.out.println("The page " + webURL + " is loading...");

@@ -5,11 +5,12 @@ public class PhoneLauncher {
 	}
 	public void launch() {
 	// your code creating and using SmartPhone here...
-		SmartPhone iPhone = new SmartPhone();
+		SmartPhone iPhone = new SmartPhone("Apple");
 		iPhone.ringAlarm("morning");
 		iPhone.findPosition();
 		iPhone.browseWeb("http://www.google.com");
 		iPhone.playGame("Snake");
+
 		iPhone.call("0207 789 1234");
 		iPhone.call("118 118");
 		iPhone.call("0800 888 9911");
@@ -23,5 +24,6 @@ public class PhoneLauncher {
 		// 10th number; next number should shift list up removing first number called.
 		iPhone.call("001 781 787 7777");
 		iPhone.printLastNumbers();
+		System.out.println("Brand is " + iPhone.getBrand() );
 	}
 }

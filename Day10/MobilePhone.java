@@ -50,7 +50,7 @@ public class MobilePhone extends OldPhone {
 		super.call(number);
 		
 	}
-	public void printNumbers() {
+	public void printLastNumbers() {
 		if(number1 != null) {
 			System.out.println("1: "+ number1);
 		}

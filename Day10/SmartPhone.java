@@ -1,4 +1,15 @@
 public class SmartPhone extends MobilePhone {
+	@Override
+	public void call(String number) {
+		if(number.substring(0,2).equals("00")) {
+			recordNumber(number);
+			System.out.println("Calling <" + number + "> through the internet to save money");
+		} else {
+			super.call(number);
+		}
+
+
+	}
 	public void browseWeb(String webURL) {
 		System.out.println("The page " + webURL + " is loading...");
 	}

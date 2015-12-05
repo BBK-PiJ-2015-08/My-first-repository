@@ -10,7 +10,7 @@ public class MobilePhone extends OldPhone {
 	private String number9 = null;
 	private String number10 = null;
 
-	private void recordNumber(String number) {
+	public void recordNumber(String number) {
 		if (number1 == null) {
 			number1 = number;
 		} else if (number2 == null) {

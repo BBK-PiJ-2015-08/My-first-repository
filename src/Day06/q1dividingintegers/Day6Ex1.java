@@ -1,3 +1,5 @@
+package Day06.q1dividingintegers;
+
 public class Day6Ex1 {
 
 	public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class Day6Ex1 {
 		System.out.println(calculator.multiply(15,4));
 		System.out.println(calculator.divide(100,5));
 		System.out.println(calculator.modulus(99,4));
-/**
+
 		System.out.println("Enter an integer");
 		String numberOne = System.console().readLine();
 		System.out.println("Enter another");
@@ -36,6 +38,5 @@ public class Day6Ex1 {
 				System.out.println("Invalid input");
 				break; 
 		}
-**/
 	}
 }

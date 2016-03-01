@@ -1,4 +1,9 @@
+package Day06.q2copyingarrays;
+
 public class ArrayCopier {
+	public ArrayCopier() {
+
+	}
 
 	public int[] copy(int[] src, int[] dst) {
 		if (src.length==dst.length || src.length>dst.length) {

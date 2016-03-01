@@ -1,3 +1,5 @@
+package Day06.q2copyingarrays;
+
 public class Day6Ex2 {
 
 	public static void main(String[] args) {
@@ -43,8 +45,7 @@ public class Day6Ex2 {
 				break;
 		}
 		ArrayCopier arrayCopier = new ArrayCopier();
-		arrayCopier.copy(src,dst);
-		arrayCopier.printArray(dst);
-
+		arrayCopier.copy(this.src,this.dst);
+		arrayCopier.printArray(this.dst);
 	}
 }

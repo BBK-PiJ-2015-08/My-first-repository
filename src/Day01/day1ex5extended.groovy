@@ -1,3 +1,5 @@
+package Day01
+
 int n1, n2
 int total = 0
 println "Enter a number"

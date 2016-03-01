@@ -1,3 +1,5 @@
+package Day01
+
 int largest = -1
 int thisnum = 0
 boolean finished = false

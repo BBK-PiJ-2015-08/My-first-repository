@@ -1,3 +1,5 @@
+package Day01
+
 boolean result = true
 println "Enter a number"
 String str = System.console().readLine()

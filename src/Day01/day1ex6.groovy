@@ -1,3 +1,5 @@
+package Day01
+
 int n1, n2
 int quotient = 0
 int remainder = 0

@@ -1,3 +1,5 @@
+package Day01
+
 print "Enter a number: "
 boolean result = true
 boolean resultUp = true

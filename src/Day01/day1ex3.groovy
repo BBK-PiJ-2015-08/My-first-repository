@@ -1,3 +1,5 @@
+package Day01
+
 String str = System.console().readLine()
 int i = Integer.parseInt(str)
 while (i < 10) {

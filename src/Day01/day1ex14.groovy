@@ -1,3 +1,5 @@
+package Day01
+
 boolean finished = false
 int nthPrime = 0
 for (i=2; i>-1; i++) {

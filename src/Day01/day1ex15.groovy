@@ -1,3 +1,5 @@
+package Day01
+
 int numGuesses = 1
 int yourGuess
 int numberToGuess = Math.abs(1000 * Math.random())

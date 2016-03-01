@@ -1,3 +1,5 @@
+package Day01
+
 String input = ""
 int p1score, p2score = 0
 println "To enter 2 players' rock paper scissors moves, use the options PP, PR, PS, RP, RR, RS, SP, SR or SS."

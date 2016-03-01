@@ -1,3 +1,5 @@
+package Day01
+
 String storeRank, storeSuit
 int rank1, rank2, rank3, rank4, rank5
 int order1, order2, order3, order4, order5

@@ -1,2 +1,2 @@
 # My-first-repository
-Exercises from PiJ course.
+Exercises from Programming in Java.

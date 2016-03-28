@@ -1,3 +1,5 @@
+package q1extension;
+
 public class SmartPhone extends MobilePhone {
 
 	public void browseWeb(String webURL) {

@@ -1,3 +1,5 @@
+package q1extension;
+
 public class MobilePhone extends OldPhone {
 	private String number1 = null;
 	private String number2 = null;

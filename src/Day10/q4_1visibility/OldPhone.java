@@ -1,3 +1,5 @@
+package q4_1visibility;
+
 public class OldPhone implements Phone {
 	private String brand = null;
 

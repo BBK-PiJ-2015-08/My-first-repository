@@ -1,3 +1,5 @@
+package q4_1visibility;
+
 public class SmartPhone extends MobilePhone {
 	public SmartPhone(String brand) {
 		super(brand);

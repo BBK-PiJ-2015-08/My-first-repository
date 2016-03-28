@@ -1,3 +1,5 @@
+package q4_2visibility;
+
 public class MobilePhone extends OldPhone {
 //	this.brand = "iPhone";
 	private String number1 = null;

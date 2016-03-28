@@ -1,3 +1,5 @@
+package q2overriding;
+
 public class SmartPhone extends MobilePhone {
 
 	@Override

@@ -1,3 +1,5 @@
+package q3ancestor;
+
 public class OldPhone implements Phone {
 	private String brand = null;
 

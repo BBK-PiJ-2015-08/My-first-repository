@@ -1,3 +1,5 @@
+package q1instancecounter;
+
 /**
  * Your class must have:
  • one and only one static variable, an int called spyCount.

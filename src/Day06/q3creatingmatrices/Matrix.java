@@ -1,4 +1,4 @@
-package Day06.q3creatingmatrices;
+package q3creatingmatrices;
 
 public class Matrix {
 	

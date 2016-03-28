@@ -1,5 +1,5 @@
 public class q3 {
-	public void getInitials (String fullName) {
+	public String getInitials (String fullName) {
 		String result = "";
 		String[] words = fullName.split(" ");
 		for (int i = 0; i < words.length; i++) {

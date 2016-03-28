@@ -1,3 +1,5 @@
+package q2dopracticewhileunderstood;
+
 public class Marking {
 	private int failed = 0;
 	private int passes = 0;

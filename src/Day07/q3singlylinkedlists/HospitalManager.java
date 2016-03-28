@@ -1,3 +1,5 @@
+package q3singlylinkedlists;
+
 public class HospitalManager {
 	private Patient patientListStart = null;
 	

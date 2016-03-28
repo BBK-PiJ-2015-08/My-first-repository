@@ -1,4 +1,4 @@
-package Day06.q2copyingarrays;
+package q2copyingarrays;
 
 public class Day6Ex2 {
 

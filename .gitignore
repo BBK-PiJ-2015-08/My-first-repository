@@ -15,16 +15,6 @@ Day14/.idea/modules.xml
 
 Day14/.idea/workspace.xml
 
-Day14/dodgyChecker.class
-
-Day14/Ex1a.class
-
-Day14/Ex1b.class
-
-Day14/Ex1a$dodgyChecker.class
-
-Day14/Ex1bTest.class
-
 Day7/.idea/.name
 
 Day7/.idea/compiler.xml
@@ -41,8 +31,6 @@ Day7/.idea/modules.xml
 
 Day7/.idea/workspace.xml
 
-Day7/Spy.class
-
 Day14/Doubler.java
 
 .idea/.name
@@ -55,17 +43,9 @@ Day14/Doubler.java
 
 PiJ-exercises.iml
 
-Day07/Spy.class
-
 Day07/.idea/.name
 
 Day07/.idea/Day7.iml
-
-*.class
-
-Day9/IntegerTree.class
-
-Day9/IntegerTreeNode.class
 
 *.iml
 
